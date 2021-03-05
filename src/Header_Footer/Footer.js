@@ -8,9 +8,7 @@ class Footer extends Component {
     render() {
         return (
             <footer className='Footer'>
-                <div className='Copyright'>
-                    © Copyright copie pas mon site wesh
-                        </div>
+                <div className='Copyright'><p>© Copyright</p></div>
 
                 <button className='Contact'>Contact</button>
 
