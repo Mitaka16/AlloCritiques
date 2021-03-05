@@ -1,9 +1,9 @@
 footer {
-  background-color: #bdd0f5;
+  background-color: #BDD0F5;
   height: 65px;
   width: 100%;
-  position: relative;
-  margin-bottom: 0;
+  position: fixed;
+  bottom: 0;
 }
 
 .Footer {
