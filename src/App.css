@@ -1,0 +1,11 @@
+.App {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");

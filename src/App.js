@@ -1,9 +1,11 @@
 import './App.css';
+import SignUp from './SignUpPage/SignUp'
+
 
 function App() {
   return (
     <div className="App">
-      Branch Sign Up
+      <SignUp />
     </div>
   );
 }
