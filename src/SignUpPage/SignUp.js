@@ -121,30 +121,29 @@ class App extends Component {
                 </div>
 
                 <form className='form'>
-                    <div className='name'>
-                        <div className='firstName'>
-                            <Input
-                                type="text"
-                                name={ETIQUETTES.PRENOM}
-                                value={input.prenom}
-                                onChange={this.handleChange}
-                                placeholder="Prénom"
-                            />
-                            <div className='ERRORS'>
-                                {errors.prenom}
-                            </div>
+
+                    <div className='firstName'>
+                        <Input
+                            type="text"
+                            name={ETIQUETTES.PRENOM}
+                            value={input.prenom}
+                            onChange={this.handleChange}
+                            placeholder="Prénom"
+                        />
+                        <div className='ERRORS'>
+                            {errors.prenom}
                         </div>
-                        <div className='lastName'>
-                            <Input
-                                type="text"
-                                name={ETIQUETTES.NOM}
-                                placeholder="Nom"
-                                value={input.name}
-                                onChange={this.handleChange}
-                            />
-                            <div className='ERRORS'>
-                                {errors.nom}
-                            </div>
+                    </div>
+                    <div className='lastName'>
+                        <Input
+                            type="text"
+                            name={ETIQUETTES.NOM}
+                            placeholder="Nom"
+                            value={input.name}
+                            onChange={this.handleChange}
+                        />
+                        <div className='ERRORS'>
+                            {errors.nom}
                         </div>
                     </div>
 

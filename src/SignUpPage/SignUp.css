@@ -1,6 +1,12 @@
 .profileContainer {
-  background-color: blueviolet;
-  border: 4px solid black;
+  background-color: #565656;
+  width: 40%;
+  min-width: 600px;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .profileContainer input {
   outline: none;
@@ -22,16 +28,6 @@
   font-size: 0.7em;
   border-bottom: 1px solid #535c68;
 }
-.profileContainer {
-  background-color: #95afc0;
-  width: 40%;
-  min-width: 600px;
-  border-radius: 5px;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
 .form {
   margin: 5px;
   border: 0;
@@ -42,16 +38,11 @@
   height: 25px;
 }
 
-.name {
-  display: flex;
-}
 .name input {
   border: 1px solid black;
   border-radius: 5px;
 }
-.firstName input {
-  width: 80%;
-}
+
 .email input {
   border: 1px solid black;
   width: 99%;
