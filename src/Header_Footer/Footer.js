@@ -31,10 +31,15 @@ class Footer extends Component {
         const modal = this.state.showModal && <Modal close={this.handleHide} />
 
         return (
+<<<<<<< HEAD
             <footer>
                 <div className='Copyright'>
                     © Copyright copie pas mon site wesh
                         </div>
+=======
+            <footer className='Footer'>
+                <div className='Copyright'><p>© Copyright</p></div>
+>>>>>>> c10ed12df7fc87ffbbee98384232740927c977be
 
                 <button className='Contact' onClick={this.handleShow}>Contact</button>
                 {modal}
