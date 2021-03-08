@@ -24,6 +24,7 @@ header {
 .Bouton_Header {
   display: flex;
   align-items: center;
+  margin-right: 25px;
 }
 
 .Bouton_Header button {
