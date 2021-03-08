@@ -1,5 +1,6 @@
 header {
   background-color: #bdd0f5;
+  color: #1E1E1E;
   width: 100%;
   height: 105px;
   display: flex;
@@ -18,6 +19,11 @@ header {
 .Logo_Header img {
   height: 125px;
   padding-right: 15px;
+}
+
+.Bouton_Header {
+  display: flex;
+  align-items: center;
 }
 
 .Bouton_Header button {
