@@ -27,12 +27,20 @@ header {
   margin-right: 25px;
 }
 
-.Bouton_Header button {
+.nav-bouton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   margin-right: 15px;
   height: 45px;
   width: 140px;
   background-color: #1e1e1e;
-  font-size: 20px;
+  font-size: 21px;
   color: white;
   border-radius: 4px;
+}
+
+.nav-bouton-account {
+  content: url(C:\Users\alanl\Desktop\AlloCritiques\src\Images\Logos\Profile.svg)
 }

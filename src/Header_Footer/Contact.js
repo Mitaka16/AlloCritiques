@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import './contact.css'
 
 class Modal extends Component {
   constructor(props) {
