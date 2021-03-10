@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import './contact.css'
 
 class Modal extends Component {
   constructor(props) {
@@ -16,13 +17,13 @@ class Modal extends Component {
 
   render() {
       return ReactDOM.createPortal(
-          <div className="modal" onClick={this.props.close}>
+          <div className="modal" >
         <div>
           <p>
             Un probleme ? Une erreur dans notre site ? Une remarque ?<br /><br />
             Pour toute question ou remarque, veuillez nous contacter sur Slack (Théo, Imen, Alan) ou par mail
           </p>
-          <button>Fermer</button>
+          <button onClick={this.props.close}>Fermer</button>
         </div>
       </div>,
     this.popUpContainer

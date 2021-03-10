@@ -1,0 +1,25 @@
+.modal {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal > div {
+    width: 50%;
+    background-color: #BDD0F5;
+    color: #1E1E1E;
+    font-size: 18px;
+    padding: 20px;
+    min-height: 200px;
+    border-radius: 5px;
+  }
+  
+  .modal button {
+    background-color: #1E1E1E;
+    color: white;
+    height: 30px;
+  }
