@@ -23,12 +23,13 @@ input[type="radio"] {
 @media (min-width: 1145px) {
   .addCriticBox {
     background-color: #565656;
-    height: 30%;
-    width: 70%;
+    height: 10%;
+    width: 90%;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    min-height: 90px;
   }
   .addCriticBox__items {
     width: 100%;
@@ -43,14 +44,14 @@ input[type="radio"] {
     height: 60%;
     padding: 12px 20px;
     border-radius: 4px;
-    font-size: 1.5em;
+    font-size: 1em;
     margin-right: 10px;
   }
   .addCriticInput__btn {
     font-weight: bold;
     background-color: #bdd0f5;
-    width: 15%;
-    height: 30%;
+    width: 10%;
+    height: 50%;
     cursor: pointer;
     margin-left: 10px;
   }
@@ -65,6 +66,7 @@ input[type="radio"] {
     align-items: center;
     justify-content: space-evenly;
     min-height: 250px;
+    min-height: 200px;
   }
   .addCriticBox__items {
     width: 100%;
@@ -80,7 +82,7 @@ input[type="radio"] {
     padding: 12px 20px;
     border-radius: 4px;
     margin-bottom: 15px;
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
   .addCriticInput__btn {

@@ -1,5 +1,5 @@
 footer {
-  background-color: #BDD0F5;
+  background-color: #bdd0f5;
   height: 65px;
   width: 100%;
   position: fixed;
@@ -30,6 +30,7 @@ footer {
   justify-content: center;
   align-items: center;
   align-self: center;
+  cursor: pointer;
 }
 
 .Logo_Reseau img {
