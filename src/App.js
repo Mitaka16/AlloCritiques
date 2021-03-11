@@ -1,20 +1,59 @@
-import './App.css';
-import Footer from './Header_Footer/Footer';
-import Header from './Header_Footer/Header';
-import SignUp from './SignUpPage/SignUp'
+import './App.css'
+import React from 'react'
+import LoginBox from './components/LogInBox'
+import RegisterBox from './components/RegisterBox'
 
+class App extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoginOpen: false,
+      isRegisterOpen: true
+    };
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <div className="AppContainer">
-        <SignUp />
+  showLoginBox = () => {
+    this.setState({ isLoginOpen: true, isRegisterOpen: false })
+  }
+  showRegisterBox = () => {
+    this.setState({ isRegisterOpen: true, isLoginOpen: false })
+  }
+
+  render() {
+
+    return (
+      <div className="root-container">
+
+        <div className="box-controller">
+
+          <div
+            className={"controller " + (this.state.isLoginOpen
+              ? "selected-controller"
+              : "")}
+            onClick={this.showLoginBox}>
+            Connexion
+          </div>
+
+          <div
+
+            className={"controller " + (this.state.isRegisterOpen
+              ? "selected-controller"
+              : "")}
+
+            onClick={this.showRegisterBox}>
+            Inscription
+          </div>
+        </div>
+
+        <div className="box-container">
+
+          {this.state.isLoginOpen && <LoginBox />}
+          {this.state.isRegisterOpen && <RegisterBox />}
+        </div>
+
       </div>
-      <Footer />
-    </div>
-  );
+    );
+  }
 }
-
 export default App;

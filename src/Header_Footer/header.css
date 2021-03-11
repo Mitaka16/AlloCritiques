@@ -1,16 +1,15 @@
 header {
   background-color: #bdd0f5;
-  width: 100%;
-  height: 105px;
+  height: 75px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+  margin: 0;
+  padding: 0;
 }
 
 .Logo_Header {
   font-size: 20px;
   display: flex;
-  justify-content: baseline;
   align-items: center;
   margin-left: 25px;
 }
@@ -20,12 +19,16 @@ header {
   padding-right: 15px;
 }
 
-.Bouton_Header button {
-  margin-right: 15px;
-  height: 45px;
-  width: 140px;
-  background-color: #1e1e1e;
+.Bouton_Header ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
   font-size: 20px;
   color: white;
   border-radius: 4px;
+  cursor: pointer;
+}
+.Bouton_Header li {
+  margin-right: 15px;
+  background-color: #1e1e1e;
 }

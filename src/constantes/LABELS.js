@@ -8,7 +8,8 @@ export const LABELS = {
 export const ETIQUETTES = {
     PRENOM: "prenom",
     NOM: "nom",
-    EMAIL_INVALIDE: "email",
+    IDENTIFIANT: "identifiant",
+    EMAIL: "email",
     MOT_DE_PASSE: "motDePasse",
     MOT_DE_PASSE_CONFIRMER: "confirmerMotDePasse",
 }

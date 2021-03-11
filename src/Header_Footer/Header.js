@@ -10,12 +10,14 @@ class Header extends Component {
                     <img src={Logo} alt='Logo AlloCritiques' />
                     <h1>Allo<span style={{ color: '#EB5757' }}>Critiques</span></h1>
                 </div>
-                <div className='Bouton_Header'>
-                    <button>Accueil</button>
-                    <button>Wishlist</button>
-                    <button>Se connecter</button>
-                    <button>Inscription</button>
-                </div>
+                <nav className='Bouton_Header'>
+                    <ul>
+                        <li>Accueil</li>
+                        <li>Wishlist</li>
+                        <li>Se connecter</li>
+                        <li>Inscription</li>
+                    </ul>
+                </nav>
             </header>
         )
     }

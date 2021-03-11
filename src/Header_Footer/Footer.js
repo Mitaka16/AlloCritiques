@@ -7,7 +7,7 @@ import Twitter from '../Images/Logos/Twitter.svg'
 class Footer extends Component {
     render() {
         return (
-            <footer className='Footer'>
+            <footer>
                 <div className='Copyright'><p>© Copyright</p></div>
 
                 <button className='Contact'>Contact</button>

@@ -10,6 +10,8 @@ export const ERRORS_LABELS = {
 export const ERREURS_ETIQUETTES = {
     PRENOM: "Entrez votre prénom.",
     NOM: "Entrez votre nom.",
+    IDENTIFIANT: "Entrez votre identifiant.",
+    EMAIL: "Entrez votre adresse email.",
     EMAIL_INVALIDE: "L'adresse email n'est pas valide.",
     MOT_DE_PASSE_REGLE: "Le mot de passe doit contenir au moins 8 caractères, une minuscule, une majuscule et un caractère spécial.",
     MOT_DE_PASSE: "Entrez votre mot de passe.",

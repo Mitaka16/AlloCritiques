@@ -2,19 +2,19 @@ import React, { Component } from 'react'
 
 class Input extends Component {
     render() {
-        const { onChange, placeholder, name, value } = this.props
+        const { type, name, className, placeholder, onChange } = this.props
         return (
-            <div>
-                <input
-                    name={name}
-                    placeholder={placeholder}
-                    value={value}
-                    onChange={onChange}
-                />
+            <input
+                type={type}
+                name={name}
+                className={className}
+                placeholder={placeholder}
+                onChange={onChange}
+            />
 
-            </div>
         )
     }
 }
 
-export default Input
+export default Input;
+
