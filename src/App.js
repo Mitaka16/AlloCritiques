@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* Contenu de la page a mettre ici */}
+      ICI JE SUIS SUR LA CRITICS
       <Footer />
     </div>
   );
