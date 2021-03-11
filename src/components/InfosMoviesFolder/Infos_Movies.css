@@ -1,0 +1,49 @@
+.Infos {
+  width: 90%;
+  height: 300px;
+  background-color: #565656;
+  display: flex;
+  color: #fff;
+  border-radius: 4px;
+  padding: 15px;
+}
+.Infos > img {
+  margin-top: -30px;
+  margin-left: -30px;
+  height: 360px;
+}
+.Infos_Titre {
+  font-size: 1.5em;
+  margin-left: 50px;
+}
+.Infos_Film {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+.Infos_Film img {
+  width: 40px;
+}
+.Infos_Film_NotePersonnel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bouton_favoris {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+span {
+  font-weight: bold;
+}
+
+.Synopsis {
+  margin-left: 50px;
+  width: 80%;
+  text-align: justify;
+}
