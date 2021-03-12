@@ -7,13 +7,11 @@ body,
 }
 /* //Root Container */
 .root-container {
-  width: 100%;
-  height: 90%;
+  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #1E1E1E;
   color: #1E1E1E
 }
 
@@ -72,8 +70,6 @@ body,
   text-align: center;
   padding: 5px;
   margin-bottom: 17px;
-  /* margin-left: 35px; */
-  /* margin-right: 35px; */
   font-family: Ozxgen, sans-serif;
   font-size: 22px;
   border-bottom: 2px solid #70a1ff;
@@ -132,7 +128,6 @@ body,
 
 .login-btn {
   padding: 2px 30px;
-  /* background-color: #417cef; */
   border: 0;
   font-size: 18px;
   border-radius: 3px;
@@ -183,21 +178,3 @@ body,
 .show {
   visibility: visible;
 }
-
-/* .App {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-.AppContainer {
-  height: 85%;
-  background-color: #ecf0f1;
-  background-size: 100%;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons"); */

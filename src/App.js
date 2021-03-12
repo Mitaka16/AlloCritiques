@@ -1,9 +1,10 @@
 import "./App.css";
-import React, { Component, Fragment } from "react";
+import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "./Header_Footer/Header";
 import Footer from "./Header_Footer/Footer";
-import Wishlist from "./Pages/Wishlist";
+import Wishlist from "./components/Wishlist";
+import SignInSignUp from "./components/SignIn-SignUp";
 
 function App() {
   return (
