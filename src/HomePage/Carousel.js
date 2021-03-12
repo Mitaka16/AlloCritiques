@@ -22,23 +22,23 @@ function Nbr () {
   return (
     <div className="App">
       <Carousel>
-        <div> <img src={img1} /> </div>
+        <div> <img src={img1} /></div>
 
-        <div> <img src={img2} /> </div>
+        <div> <img src={img2} /></div>
 
-        <div> <img src={img3}/> </div>
+        <div> <img src={img3}/></div>
 
-        <div><img src={img4}/> </div>
+        <div><img src={img4}/></div>
 
         <div><img src={img5}/></div>
 
-        <div> <img src={img6}/> </div>
+        <div> <img src={img6}/></div>
 
-        <div> <img src={img7}/> </div>
+        <div> <img src={img7}/></div>
 
-        <div> <img src={img8}/> </div>
+        <div> <img src={img8}/></div>
 
-        <div> <img src={img9}/> </div>
+        <div> <img src={img9}/></div>
 
         <div> <img src={img10}/></div>
       </Carousel>

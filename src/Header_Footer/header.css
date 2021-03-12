@@ -1,4 +1,6 @@
 header {
+  position: absolute;
+  top: 0;
   background-color: #bdd0f5;
   color: #1E1E1E;
   width: 100%;
@@ -42,5 +44,5 @@ header {
 }
 
 .nav-bouton-account {
-  content: url(C:\Users\imenm\AlloCritiques\src\Images\Logos\Profile.svg)
+  content: url(C:\Users\alanl\Desktop\AlloCritiques\src\Images\Logos\Profile.svg)
 }
