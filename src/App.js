@@ -6,19 +6,19 @@ import Footer from "./Header_Footer/Footer";
 import SignInSignUp from './components/SignIn-SignUp'
 
 class App extends Component {
-  
+
 
   render() {
     return (
       <Fragment>
         <BrowserRouter>
           <Header />
+
           <Switch>
-          <Route path='/Register' component={SignInSignUp} />
-          <Route path='/SignIn' component={SignInSignUp} />
+            <Route path='/Register' component={SignInSignUp} />
+            <Route path='/SignIn' component={SignInSignUp} />
           </Switch>
         </BrowserRouter>
-        
 
         <Footer />
       </Fragment>

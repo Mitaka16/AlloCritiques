@@ -1,5 +1,5 @@
 footer {
-  background-color: #BDD0F5;
+  background-color: #bdd0f5;
   height: 65px;
   width: 100%;
   position: fixed;
@@ -10,12 +10,10 @@ footer {
 }
 
 .Copyright {
-  margin-left: 15px;
   font-size: 16px;
   color: #1e1e1e;
   font-weight: bold;
-  padding: 0;
-  margin: 0;
+  margin-left: 15px;
 }
 
 .Contact {
@@ -29,8 +27,7 @@ footer {
   justify-content: center;
   align-items: center;
   align-self: center;
-  padding: 0;
-  margin: 0;
+  cursor: pointer;
 }
 
 .Logo_Reseau img {
