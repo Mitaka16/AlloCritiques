@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Logo from '../Images/Logos/Logo_AlloCritiques.png'
 import {Link} from 'react-router-dom'
 import "../Header_Footer/header.css"
-import {Link} from 'react-router-dom'
 
 class Header extends Component {
     constructor(props) {
