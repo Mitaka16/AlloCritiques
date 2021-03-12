@@ -7,17 +7,19 @@ class SignInSignUp extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          isLoginOpen: false,
-          isRegisterOpen: true,
+          isLoginOpen: true,
+          isRegisterOpen: false,
         };
       }
     
       showLoginBox = () => {
         this.setState({ isLoginOpen: true, isRegisterOpen: false });
       };
+
       showRegisterBox = () => {
         this.setState({ isRegisterOpen: true, isLoginOpen: false });
       };
+
     render() {
         return (
             
