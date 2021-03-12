@@ -2,7 +2,7 @@ import './App.css'
 import React, { Component, Fragment } from 'react'
 import LoginBox from './components/LogInBox'
 import RegisterBox from './components/RegisterBox'
-
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Footer from './Header_Footer/Footer'
 
 class App extends Component {
@@ -56,9 +56,17 @@ class App extends Component {
           </div>
 
         </div>
+        <BrowserRouter>
+        <Header />
+        <Switch>
+          {/* Contenu de la page a mettre ici 
+          <Route path='/***' component={***} */}
+        </Switch>
+        </BrowserRouter>
         <Footer />
       </Fragment>
     );
   }
 }
+
 export default App;

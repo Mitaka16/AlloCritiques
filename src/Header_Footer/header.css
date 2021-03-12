@@ -1,6 +1,6 @@
 header {
   background-color: #bdd0f5;
-  color: #1e1e1e;
+  color: #1E1E1E;
   width: 100%;
   height: 105px;
   display: flex;
@@ -36,19 +36,24 @@ header {
   color: white;
   border-radius: 4px;
 }
+
 .nav-bouton-account {
-  content: url(C:\Users\theo-\Desktop\GitHub\AlloCritiques\src\Images\Logos\Profile.svg);
+  content: url(C:\Users\alanl\Desktop\AlloCritiques\src\Images\Logos\Profile.svg)
 }
+
+
 @media (max-width: 1080px) {
+
   header {
     background-color: #bdd0f5;
-    color: #1e1e1e;
+    color: #1E1E1E;
     width: 100%;
     height: 105px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+  
   .Logo_Header {
     font-size: 20px;
     display: flex;
@@ -56,10 +61,12 @@ header {
     align-items: center;
     margin-left: 25px;
   }
+  
   .Logo_Header img {
     height: 125px;
     padding-right: 15px;
   }
+  
   .Bouton_Header {
     display: flex;
     justify-content: flex-end;
@@ -67,6 +74,7 @@ header {
     align-items: center;
     margin-right: 25px;
   }
+  
   .nav-bouton {
     display: flex;
     align-items: center;
@@ -81,7 +89,9 @@ header {
     border-radius: 4px;
   }
 }
+
 @media (max-width: 800px) {
+
   .Logo_Header {
     font-size: 10px;
     display: flex;
@@ -89,10 +99,12 @@ header {
     align-items: center;
     margin-left: 5px;
   }
+  
   .Logo_Header img {
     height: 75px;
     padding-right: 5px;
   }
+  
   .Bouton_Header {
     display: flex;
     width: 100%;
@@ -101,6 +113,7 @@ header {
     margin-right: 5px;
     margin-bottom: 5px;
   }
+  
   .nav-bouton {
     display: flex;
     align-items: center;
