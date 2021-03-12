@@ -1,9 +1,11 @@
 import './App.css'
-import React from 'react'
+import React, { Component, Fragment } from 'react'
 import LoginBox from './components/LogInBox'
 import RegisterBox from './components/RegisterBox'
 
-class App extends React.Component {
+import Footer from './Header_Footer/Footer'
+
+class App extends Component {
 
   constructor(props) {
     super(props);
@@ -23,36 +25,39 @@ class App extends React.Component {
   render() {
 
     return (
-      <div className="root-container">
+      <Fragment>
+        <div className="root-container">
 
-        <div className="box-controller">
+          <div className="box-controller">
 
-          <div
-            className={"controller " + (this.state.isLoginOpen
-              ? "selected-controller"
-              : "")}
-            onClick={this.showLoginBox}>
-            Connexion
+            <div
+              className={"controller " + (this.state.isLoginOpen
+                ? "selected-controller"
+                : "")}
+              onClick={this.showLoginBox}>
+              Connexion
           </div>
 
-          <div
+            <div
 
-            className={"controller " + (this.state.isRegisterOpen
-              ? "selected-controller"
-              : "")}
+              className={"controller " + (this.state.isRegisterOpen
+                ? "selected-controller"
+                : "")}
 
-            onClick={this.showRegisterBox}>
-            Inscription
+              onClick={this.showRegisterBox}>
+              Inscription
           </div>
+          </div>
+
+          <div className="box-container">
+
+            {this.state.isLoginOpen && <LoginBox />}
+            {this.state.isRegisterOpen && <RegisterBox />}
+          </div>
+
         </div>
-
-        <div className="box-container">
-
-          {this.state.isLoginOpen && <LoginBox />}
-          {this.state.isRegisterOpen && <RegisterBox />}
-        </div>
-
-      </div>
+        <Footer />
+      </Fragment>
     );
   }
 }
