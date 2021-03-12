@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- Demo styles -->
+  
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(https://www.affiche-cine.com/images/thematiques/405x360/james-bond.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://i.pinimg.com/originals/0f/1d/df/0f1ddf5387cfbfd31303003237bd150a.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://images-na.ssl-images-amazon.com/images/I/81G2BOxV96L._AC_SY606_.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://i.pinimg.com/474x/bf/08/9c/bf089cb2ed120a9673ff15199ea9c61b.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://www.mauvais-genres.com/21870-large_default/zombie-affiche-de-film-120x160-cm-1979-tom-savini-george-a-romero.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://cdn.radiofrance.fr/s3/cruiser-production/2013/07/6aae85d7-e6e2-11e2-9f7b-782bcb6744eb/640_le_parrain1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://www.francetvinfo.fr/pictures/GKnYr14TRJfT9Xjgq5-COyRWAq8/fit-in/720x/2018/11/23/php2eCjHe.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://img.huffingtonpost.com/asset/5c92b0e13b0000a6076ddf59.jpeg?ops=scalefit_630_noupscale)"></div>
+      <div class="swiper-slide" style="background-image:url(https://img.filmsactu.net/datas/fiches/c/l/classement-des-meilleurespires-affiches/xl/classement-des-meilleures-pires-affiches-affiche-5489bced3f68d.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://static.actu.fr/uploads/2018/04/affiche-avenger-afinity.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://images-na.ssl-images-amazon.com/images/I/71bmNSxkw-L._AC_SY550_.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url()"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+ 
+</body>
+
+</html>
+**********************************************************************************************************************************

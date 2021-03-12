@@ -1,4 +1,6 @@
 header {
+  position: absolute;
+  top: 0;
   background-color: #bdd0f5;
   color: #1e1e1e;
   width: 100%;
