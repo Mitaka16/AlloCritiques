@@ -1,0 +1,11 @@
+.Wishlist h1 {
+    color: #EB5757;
+    font-size: 45px;
+}
+
+.Wishlist section img {
+    height: 400px;
+    width: 280px;
+    margin-left: 50px;
+    margin-top: 25px;
+}
