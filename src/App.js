@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "./Header_Footer/Header";
 import Footer from "./Header_Footer/Footer";
 import Wishlist from "./Pages/Wishlist";
+import SignInSignUp from "./Pages/SignIn-SignUp";
 
 function App() {
   return (
@@ -16,8 +17,6 @@ function App() {
           <Route path='/SignIn' component={SignInSignUp} />
         </Switch>
       </BrowserRouter>
-      <Nbr />
-      <SearchBar />
 
       <Footer />
     </div>
