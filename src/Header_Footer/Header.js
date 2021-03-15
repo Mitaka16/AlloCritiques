@@ -8,7 +8,7 @@ class Header extends Component {
         super(props)
     
         this.state = {
-             Logged: true
+             Logged: false
         }
     }
     
