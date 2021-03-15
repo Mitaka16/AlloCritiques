@@ -44,7 +44,7 @@ header {
 }
 
 .nav-bouton-account {
-  content: url(C:\Users\alanl\Desktop\AlloCritiques\src\Images\Logos\Profile.svg)
+  content: url('../Images/Logos/Profile.svg')
 }
 
 
