@@ -99,7 +99,7 @@ class RegisterBox extends React.Component {
         return (
             <div className="inner-container">
 
-                <div className="header">
+                <div className="header-signin">
                     Inscription
           </div>
 

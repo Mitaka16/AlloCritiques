@@ -23,8 +23,7 @@ class Header extends Component {
                 <div className='Bouton_Header'>
                     <Link className='nav-bouton' to='/'>Accueil</Link>
                     <Link className='nav-bouton' to='/Wishlist'>Wishlist</Link>
-                    {Logged ? <Link className='nav-bouton-account' to='/MyAccount'>Mon Compte</Link> : <Link className='nav-bouton' to='/SignIn'>Se connecter</Link>}
-                    {Logged ? null : <Link className='nav-bouton' to='/Register'>Inscription</Link> }               
+                    {Logged ? <Link className='nav-bouton-account' to='/MyAccount'>Mon Compte</Link> : <Link className='nav-bouton-' to='/SignIn'>Se connecter / S'inscrire</Link>}
                 </div>
             </header>
         )

@@ -60,7 +60,7 @@ class LoginBox extends React.Component {
         return (
             <div className="inner-container">
 
-                <div className="header">
+                <div className="header-signin">
                     Connexion
           </div>
 
