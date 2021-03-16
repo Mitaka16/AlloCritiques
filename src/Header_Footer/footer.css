@@ -1,9 +1,11 @@
 footer {
-  background-color: #bdd0f5;
-  height: 65px;
-  width: 100%;
   position: fixed;
+  left: 0;
   bottom: 0;
+  width: 100%;
+  background-color: #bdd0f5;
+  color: white;
+  text-align: center;
 }
 
 .Footer {

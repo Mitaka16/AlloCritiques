@@ -30,6 +30,7 @@ class AddCritic extends Component {
                 <div className="addCriticBox__items">
                     <input
                         className="addCriticInput__InputBox_Input"
+                        placeholder="Laissez un commentaire !"
                         type="text"
                         onChange={(text) => this.handleChange(text)}
                     />

@@ -3,6 +3,7 @@
   width: 40%;
   color: #70a1ff;
   border-radius: 4px;
+  min-width: 400px;
 }
 .header_Commentsection{
   display: flex;

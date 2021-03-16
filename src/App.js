@@ -1,4 +1,5 @@
 import './App.css';
+import Header from './Header_Footer/Header'
 import Footer from './Header_Footer/Footer'
 import Infos_Movies from './components/InfosMoviesFolder/Infos_Movies'
 import AddCritic from './components/AddCriticFolder/AddCritic';
@@ -11,7 +12,7 @@ function App() {
       <Infos_Movies />
       <AddCritic />
 
-<PositiveReviews/>
+      <PositiveReviews />
 
       <Footer />
     </div>

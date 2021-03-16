@@ -31,7 +31,7 @@ class Infos_Movies extends Component {
             onClick={this.handleWhishlist}
             alt="icon favoris"
           />
-          Ajouter le film à la Whilshlist ?
+          Ajouter à la Whilshlist ?
         </button>
       );
     } else {

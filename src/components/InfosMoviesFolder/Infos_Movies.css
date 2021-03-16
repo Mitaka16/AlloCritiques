@@ -4,17 +4,18 @@
   display: flex;
   color: #fff;
   border-radius: 4px;
-  padding: 15px;
   margin: 15px auto;
 }
 .Infos > img {
-  margin-top: -30px;
-  margin-left: -30px;
-  height: 360px;
+  margin-top: -2%;
+  margin-left: -2%;
+  margin-bottom: -2%;
+  height: 390px;
 }
 .Infos_Titre {
   font-size: 1.5em;
   margin-left: 50px;
+
 }
 .Infos_Film {
   width: 85%;
@@ -58,8 +59,6 @@ span {
     flex-direction: column;
     color: #fff;
     border-radius: 4px;
-    padding: 15px;
-    margin: 15px auto;
 
   }
   .Infos > img {
@@ -100,21 +99,19 @@ span {
 }
 @media (max-width: 550px) {
   .Infos_Film {
-    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: 15px auto;
 
   }
 
   .bouton_favoris {
-    background-color: palegreen;
     cursor: pointer;
     display: flex;
   }
   .bouton_favoris button {
     padding: 0 15px;
+    margin: 15px 0;
   }
 }
