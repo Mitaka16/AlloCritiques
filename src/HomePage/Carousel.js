@@ -2,7 +2,7 @@ import React from 'react';
 import './carousel.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import {Carousel} from 'react-responsive-carousel';
-/*import funnel from './Barre/funnel.png'*/
+
 
 import img1 from './DossierAffiches/img1.jpg'
 import img2 from './DossierAffiches/img2.jpg'

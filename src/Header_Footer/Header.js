@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Logo from '../Images/Logos/Logo_AlloCritiques.png'
 import {Link} from 'react-router-dom'
 import "../Header_Footer/header.css"
+/*import Filter from '../HomePage/Barre/Filter'*/
 
 class Header extends Component {
     constructor(props) {

@@ -9,14 +9,18 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      
         <Header />
         <Switch>
           {/* Contenu de la page a mettre ici 
           <Route path='/***' component={***} */}
+         
         </Switch>
+        <SearchBar />
+        <Nbr />
       </BrowserRouter>
-      <Nbr />
-      <SearchBar />
+      
+     
 
       <Footer />
     </div>
