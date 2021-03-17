@@ -2,6 +2,7 @@ import "./thumbsRating.css";
 import icon_thumbUp from "../../Images/Icons/icon_thumbUp.svg";
 import icon_thumbDown from "../../Images/Icons/icon_thumbDown.svg";
 import React, { Component } from "react";
+import BlueThumbDown from "./ThumbStyle"
 
 class ThumbsRating extends Component {
   constructor(props) {
@@ -10,38 +11,44 @@ class ThumbsRating extends Component {
     this.state = {
       isSelected: false,
       compteurUp: 364,
-      compteurDown: 64,
+      isDisabled: false
     };
   }
 
-  ThumsUp = () => {
+  CounterUp = () => {
     this.setState({
-      isSelected: !this.isSelected,
-      compteurUp: this.state.compteurUp + 1,
+
+      compteurUp: this.state.compteurUp + 1
+
     });
   };
 
-  ThumsDown = () => {
+  CounterDown = () => {
     this.setState({
-      isSelected: !this.isSelected,
-      compteurDown: this.state.compteurDown + 1,
+      compteurUp: this.state.compteurUp - 1
     });
   };
+
+
+  // IF isSelected true : AddOne / ChangeColor() / keep it Enabled if Unselected
+  // If isSelected again : OneLess /  ChangeColor(black)
 
   render() {
+    const { isSelected, isDisabled } = this.state
 
     return (
       <div className="thumbs_Section">
+
         <p>{this.state.compteurUp}</p>
-        <img
-          onClick={this.ThumsUp}
-          src={icon_thumbUp}
-        />
-        <img
-          onClick={this.ThumsDown}
-          src={icon_thumbDown}
-          
-        />
+        { isSelected ?
+          (<button onClick={this.CounterUp} disabled={!isDisabled}>
+            <img src={icon_thumbUp} />
+          </button>)
+          :
+          (<BlueThumbDown onClick={this.CounterDown} />)}
+
+
+
 
         <p>{this.state.compteurDown}</p>
       </div>
