@@ -1,9 +1,9 @@
 import "../Header_Footer/footer.css"
 import React, { Component } from 'react'
 import Modal from './Contact'
-import Instagram from '../Images/Logos/Instagram.svg'
-import Facebook from '../Images/Logos/Facebook.svg'
-import Twitter from '../Images/Logos/Twitter.svg'
+import Instagram from '../../Images/Logos/Instagram.svg'
+import Facebook from '../../Images/Logos/Facebook.svg'
+import Twitter from '../../Images/Logos/Twitter.svg'
 
 class Footer extends Component {
     constructor(props) {

@@ -55,7 +55,7 @@ class LoginBox extends React.Component {
 
 
     render() {
-        const { input } = this.state
+        // const { input } = this.state
         const { errors } = this.state
         return (
             <div className="inner-container">

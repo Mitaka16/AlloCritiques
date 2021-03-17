@@ -13,7 +13,7 @@ export const ERREURS_ETIQUETTES = {
     IDENTIFIANT: "Entrez votre identifiant.",
     EMAIL: "Entrez votre adresse email.",
     EMAIL_INVALIDE: "L'adresse email n'est pas valide.",
-    MOT_DE_PASSE_REGLE: "Le mot de passe doit contenir au moins 8 caractères, une minuscule, une majuscule et un caractère spécial.",
+    MOT_DE_PASSE_REGLE: "Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule, un chiffre et un caractère spécial.",
     MOT_DE_PASSE: "Entrez votre mot de passe.",
     MOT_DE_PASSE_CONFIRMER: "Confirmez votre mot de passe.",
     MOT_DE_PASSE_DIFFERENT: "Les mots de passe ne correspondent pas."

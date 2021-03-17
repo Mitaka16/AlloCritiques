@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import './wishlist.css'
-import Inception from '../Images/Films/Inception.jpg'
-import Independence_Day from '../Images/Films/Independence_Day.jpg'
-import Indiana_Jones from '../Images/Films/Indiana_Jones.jpg'
-import Interstellar from '../Images/Films/Interstellar.jpg'
-import Intouchables  from '../Images/Films/Intouchables.jpg'
-import Invictus  from '../Images/Films/Invictus.jpg'
-import Les_Indestructibles  from '../Images/Films/Les_Indestructibles.jpg'
-import Mortal_Kombat from '../Images/Films/Mortal_Kombat.jpg'
-
+import Inception from '../../Images/Films/Inception.jpg'
+import Independence_Day from '../../Images/Films/Independence_Day.jpg'
+import Indiana_Jones from '../../Images/Films/Indiana_Jones.jpg'
+import Interstellar from '../../Images/Films/Interstellar.jpg'
+import Intouchables  from '../../Images/Films/Intouchables.jpg'
+import Invictus  from '../../Images/Films/Invictus.jpg'
+import Les_Indestructibles  from '../../Images/Films/Les_Indestructibles.jpg'
+import Mortal_Kombat from '../../Images/Films/Mortal_Kombat.jpg'
 
 class Wishlist extends Component {
     render() {
@@ -31,3 +30,5 @@ class Wishlist extends Component {
 }
 
 export default Wishlist
+
+

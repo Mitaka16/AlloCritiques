@@ -4,43 +4,31 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import {Carousel} from 'react-responsive-carousel';
 /*import funnel from './Barre/funnel.png'*/
 
-import img1 from './DossierAffiches/img1.jpg'
-import img2 from './DossierAffiches/img2.jpg'
-import img3 from './DossierAffiches/img3.jpg'
-import img4 from './DossierAffiches/img4.jpg'
-import img5 from './DossierAffiches/img5.jpg'
-import img6 from './DossierAffiches/img6.jpg'
-import img7 from './DossierAffiches/img7.jpg'
-import img8 from './DossierAffiches/img8.jpg'
-import img9 from './DossierAffiches/img9.jpg'
-import img10 from './DossierAffiches/img10.jpg'
-
-
-
+import Skyfall from './DossierAffiches/Skyfall.jpg'
+import Intouchables from './DossierAffiches/Intouchables.jpg'
+import Rebelle from './DossierAffiches/Rebelle.jpg'
+import Gladiator from './DossierAffiches/Gladiator.jpg'
+import Gardien_de_la_Galaxie from './DossierAffiches/Gardien_de_la_Galaxie.jpg'
+import Le_Parrain from './DossierAffiches/Le_Parrain.jpg'
+import LEmpereur_de_Paris from './DossierAffiches/LEmpereur_de_Paris.jpg'
+import Le_dernier_Diamant from './DossierAffiches/Le_dernier_Diamant.jpg'
+import Avengers_IW from './DossierAffiches/Avengers_IW.jpg'
+import Harry_Potter from './DossierAffiches/Harry_Potter.jpg'
 
 function Nbr () {
   return (
     <div>
       <Carousel>
-         <img className='carousel-img' src={img1} />
-
-         <img className='carousel-img' src={img2} />
-
-         <img className='carousel-img' src={img3}/>
-
-        <img className='carousel-img' src={img4}/>
-
-        <img className='carousel-img' src={img5}/>
-
-         <img className='carousel-img' src={img6}/>
-
-         <img className='carousel-img' src={img7}/>
-
-         <img className='carousel-img' src={img8}/>
-
-         <img className='carousel-img' src={img9}/>
-
-         <img className='carousel-img' src={img10}/>
+        <img className='carousel-img' alt='Poster Skyfall' src={Skyfall} />
+        <img className='carousel-img' alt='Poster Intouchables' src={Intouchables} />
+        <img className='carousel-img' alt='Poster Reblle' src={Rebelle}/>
+        <img className='carousel-img' alt='Poster Gladiator' src={Gladiator}/>
+        <img className='carousel-img' alt='Poster Gardien de la Galaxie' src={Gardien_de_la_Galaxie}/>
+        <img className='carousel-img' alt='Poster Le Parrain' src={Le_Parrain}/>
+        <img className='carousel-img' alt='Poster L Empereur de Paris' src={LEmpereur_de_Paris}/>
+        <img className='carousel-img' alt='Poster Le dernier Diamant' src={Le_dernier_Diamant}/>
+        <img className='carousel-img' alt='Poster Avengers IW' src={Avengers_IW}/>
+        <img className='carousel-img' alt='Poster Harry Potter' src={Harry_Potter}/>
       </Carousel>
     </div>
   );
