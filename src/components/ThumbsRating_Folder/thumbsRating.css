@@ -1,0 +1,12 @@
+.thumbs_Section{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 15px 0 15px;
+    margin-bottom: 10px;
+     
+  }
+.thumbs_Section img{
+    margin: 0 15px;
+    cursor: pointer;
+
+  }

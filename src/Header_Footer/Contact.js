@@ -1,0 +1,34 @@
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import './contact.css'
+
+class Modal extends Component {
+  constructor(props) {
+    super(props);
+
+    this.popUpContainer = document.createElement("div");
+
+    document.body.appendChild(this.popUpContainer);
+  }
+
+  componentWillUnmount() {
+    document.body.removeChild(this.popUpContainer);
+  }
+
+  render() {
+      return ReactDOM.createPortal(
+          <div className="modal" >
+        <div>
+          <p>
+            Un probleme ? Une erreur dans notre site ? Une remarque ?<br /><br />
+            Pour toute question ou remarque, veuillez nous contacter sur Slack (Théo, Imen, Alan) ou par mail
+          </p>
+          <button onClick={this.props.close}>Fermer</button>
+        </div>
+      </div>,
+    this.popUpContainer
+    );
+  }
+}
+
+export default Modal;

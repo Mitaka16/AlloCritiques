@@ -1,19 +1,23 @@
 footer {
-  background-color: #bdd0f5;
-  height: 65px;
-  width: 100%;
-  position: fixed;
+  left: 0;
   bottom: 0;
+  width: 100%;
+  background-color: #bdd0f5;
+  color: white;
+  text-align: center;
+}
+
+.Footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .Copyright {
+  margin-left: 15px;
   font-size: 16px;
   color: #1e1e1e;
   font-weight: bold;
-  margin-left: 15px;
 }
 
 .Contact {
