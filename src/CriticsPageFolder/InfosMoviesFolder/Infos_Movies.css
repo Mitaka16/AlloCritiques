@@ -4,7 +4,7 @@
   display: flex;
   color: #fff;
   border-radius: 4px;
-  margin: 15px auto;
+  margin: 40px auto 40px auto;
 }
 .Infos > img {
   margin-top: -2%;
@@ -62,7 +62,7 @@ span {
 
   }
   .Infos > img {
-    margin: auto;
+    margin: 15px auto 0 auto;
     width: 300px;
     display: flex;
     justify-content: center;

@@ -1,19 +1,19 @@
 import './App.css';
-import Header from './Header_Footer/Header'
-import Footer from './Header_Footer/Footer'
-import Infos_Movies from './components/InfosMoviesFolder/Infos_Movies'
-import AddCritic from './components/AddCriticFolder/AddCritic';
-import PositiveReviews from './components/positiveReviewsFolder/PositiveReviews';
+import Header from './Header_Footer/Header';
+import Footer from './Header_Footer/Footer';
+import CriticsPage from "./CriticsPageFolder/criticsPage";
+import { Route, Switch, BrowserRouter } from 'react-router-dom'
+
 
 function App() {
   return (
     <div className="App">
-
-      <Infos_Movies />
-      <AddCritic />
-
-      <PositiveReviews />
-
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route exact path='/' component={CriticsPage} />
+        </Switch>
+      </BrowserRouter>
       <Footer />
     </div>
   );

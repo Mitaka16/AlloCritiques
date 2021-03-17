@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "./positiveReviews.css";
+import "./Reviews.css";
 import iconOpenSection from "../../Images/Icons/icon_openSectionComments.svg";
-import icon_userProfile from "../../Images/Icons/icon_ProfileConnected.svg";
-import StarRating from "../StarRatingFolder/StarRating";
-import ThumbsRating from "../Thumbs_Rating/ThumbsRating"
+import icon_ProfileCommented_Man from "../../Images/Icons/icon_ProfileCommented_Man.svg";
+import StarRating from "../../components/StarRating_Folder/StarRating";
+import ThumbsRating from "../../components/ThumbsRating_Folder/ThumbsRating"
 
 class PositiveReviews extends Component {
   render() {
@@ -16,7 +16,7 @@ class PositiveReviews extends Component {
 
         <div className="profil_Commentsection">
           <div className="profile_details">
-            <img src={icon_userProfile} alt="user profile avatar" />
+            <img src={icon_ProfileCommented_Man} alt="user profile avatar" />
             <span>
               <p>Alan</p>
               <StarRating />
@@ -28,7 +28,7 @@ class PositiveReviews extends Component {
             blandit sem egestas nec. Donec tempor libero eu metus molestie
             sagittis.
           </p>
-            <ThumbsRating />
+          <ThumbsRating />
         </div>
 
       </div>

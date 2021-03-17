@@ -3,7 +3,7 @@ import "./Infos_Movies.css";
 import Intouchables from "../../Images/Films/Intouchables.jpg";
 import Favorite_On from "../../Images/Logos/Favorite_Coeur_On.svg";
 import Favorite_Off from "../../Images/Logos/Favorite_Coeur_Off.svg";
-import StarRating from "../StarRatingFolder/StarRating";
+import StarRating from "../../components/StarRating_Folder/StarRating";
 
 class Infos_Movies extends Component {
   constructor(props) {

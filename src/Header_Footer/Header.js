@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
 import Logo from '../Images/Logos/Logo_AlloCritiques.png'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import "../Header_Footer/header.css"
 
 class Header extends Component {
     constructor(props) {
         super(props)
-    
+
         this.state = {
-             Logged: false
+            Logged: false
         }
     }
-    
+
     render() {
-        const {Logged} = this.state
-         return (
+        const { Logged } = this.state
+        return (
             <header>
                 <div className='Logo_Header'>
                     <img src={Logo} alt='Logo AlloCritiques' />
@@ -23,8 +23,7 @@ class Header extends Component {
                 <div className='Bouton_Header'>
                     <Link className='nav-bouton' to='/'>Accueil</Link>
                     <Link className='nav-bouton' to='/Wishlist'>Wishlist</Link>
-                    {Logged ? <Link className='nav-bouton-account' to='/MyAccount'>Mon Compte</Link> : <Link className='nav-bouton' to='/Sign_In'>Se connecter</Link>}
-                    {Logged ? null : <Link className='nav-bouton' to='/Register'>Inscription</Link> }               
+                    {Logged ? <Link className='nav-bouton-account' to='/MyAccount'>Mon Compte</Link> : <Link className='nav-bouton-' to='/SignIn'>Se connecter / S'inscrire</Link>}
                 </div>
             </header>
         )

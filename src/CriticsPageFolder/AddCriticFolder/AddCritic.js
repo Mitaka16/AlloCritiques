@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import StarRating from '../StarRating_Folder/StarRating'
+import StarRating from '../../components/StarRating_Folder/StarRating'
 import './addCritic.css'
 
 

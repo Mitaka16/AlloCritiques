@@ -1,5 +1,4 @@
 header {
-  position: absolute;
   top: 0;
   background-color: #bdd0f5;
   color: #1e1e1e;
@@ -34,11 +33,27 @@ header {
   height: 45px;
   width: 140px;
   background-color: #1e1e1e;
-  font-size: 21px;
+  font-size: 18px;
+  color: white;
+  border-radius: 4px;
+}
+.nav-bouton- {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-right: 15px;
+  height: 45px;
+  width: 140px;
+  background-color: #1e1e1e;
+  font-size: 18px;
   color: white;
   border-radius: 4px;
 }
 
+.nav-bouton-account {
+  content: url(../Images/Logos/Profile.svg);
+}
 
 @media (max-width: 1080px) {
   header {
