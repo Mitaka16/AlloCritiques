@@ -3,7 +3,6 @@ import "./Reviews.css";
 import iconOpenSection from "../../Images/Icons/icon_openSectionComments.svg";
 import icon_ProfileCommented_Man from "../../Images/Icons/icon_ProfileCommented_Man.svg";
 import StarRating from "../../components/StarRating_Folder/StarRating";
-import ThumbsRating from "../../components/ThumbsRating_Folder/ThumbsRating"
 
 class PositiveReviews extends Component {
   render() {
@@ -28,7 +27,7 @@ class PositiveReviews extends Component {
             blandit sem egestas nec. Donec tempor libero eu metus molestie
             sagittis.
           </p>
-          <ThumbsRating />
+
         </div>
 
       </div>

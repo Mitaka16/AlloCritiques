@@ -3,7 +3,7 @@ import "./Reviews.css";
 import iconOpenSection from "../../Images/Icons/icon_openSectionComments.svg";
 import icon_ProfileCommented_Girl from "../../Images/Icons/icon_ProfileCommented_Girl.svg";
 import StarRating from "../../components/StarRating_Folder/StarRating";
-import ThumbsRating from "../../components/ThumbsRating_Folder/ThumbsRating"
+import LikeDislikeButtons from "../../components/LikeDislikeButtons_Folder/LikeDislikeButtons"
 
 class NegativeReviews extends Component {
     render() {
@@ -28,7 +28,7 @@ class NegativeReviews extends Component {
                         blandit sem egestas nec. Donec tempor libero eu metus molestie
                         sagittis.
           </p>
-                    <ThumbsRating />
+                    <LikeDislikeButtons />
                 </div>
 
             </div>
