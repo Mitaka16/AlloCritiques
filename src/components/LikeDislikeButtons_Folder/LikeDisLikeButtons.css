@@ -9,15 +9,8 @@
   height: 50px;
   width: 30px;
 }
-.containerActive svg {
-  cursor: pointer;
-  background: red;
-  color: #70a1ff;
-  animation: backwards;
+.container img:active {
+  background: transparent;
   height: 50px;
   width: 30px;
-}
-.active{
-  background-color: blue;
-  width: 900px;
 }
