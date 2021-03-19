@@ -1,7 +1,6 @@
 .container {
   display: flex;
   align-items: center;
-  background-color: rgba(0, 0, 255, 0.322);
   justify-content: space-around;
 }
 .container img {
@@ -9,4 +8,8 @@
   background: transparent;
   height: 50px;
   width: 30px;
+}
+.active{
+  background-color: red;
+  width: 900px;
 }

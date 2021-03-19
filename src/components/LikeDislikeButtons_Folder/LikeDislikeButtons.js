@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "../LikeDislikeButtons_Folder/LikeDisLikeButtons.css";
-import icon_thumbUp from "../../Images/Icons/icon_thumbUp.svg"
+import icon_thumbUp from "../../Images/Icons/icon_thumbUp.svg";
+import icon_thumbDown from "../../Images/Icons/icon_thumbDown.svg";
+import ThumbDownStyle from "../ThumbsRating_Folder/ThumbDownStyle"
 
 
 class LikeDislikeButtons extends Component {
@@ -45,20 +47,34 @@ class LikeDislikeButtons extends Component {
     render() {
         return (
             <div className="container">
+
+                {this.state.likeActive ?
+                    (<img
+                        src={icon_thumbUp}
+                        onClick={() => this.handleLike()}
+                        className="active"
+                    />) :
+                    (<img
+                        src={icon_thumbUp}
+                        onClick={() => this.handleLike()}
+                    />)}
+
+
                 <p>J'aime {this.state.like}</p>
                 <img
                     src={icon_thumbUp}
                     onClick={() => this.handleLike()}
-                    className={({ ["active"]: this.state.likeActive })}
+                    className={"active" + this.state.likeActive}
                 />
 
                 <img
+                    src={icon_thumbDown}
                     className={({ ["active"]: this.state.dislikeActive })}
                     onClick={() => this.handleDislike()}
                 />
 
                 <p>Je n'aime pas : {this.state.dislike}</p>
-            </div>
+            </div >
         );
     }
 }
