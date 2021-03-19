@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import "../LikeDislikeButtons_Folder/LikeDisLikeButtons.css";
 import icon_thumbUp from "../../Images/Icons/icon_thumbUp.svg";
+import icon_thumbUpBlue from "../../Images/Icons/icon_thumbUp.svg";
 import icon_thumbDown from "../../Images/Icons/icon_thumbDown.svg";
-import ThumbDownStyle from "../ThumbsRating_Folder/ThumbDownStyle"
 
 
 class LikeDislikeButtons extends Component {
@@ -46,35 +46,43 @@ class LikeDislikeButtons extends Component {
 
     render() {
         return (
-            <div className="container">
 
-                {this.state.likeActive ?
-                    (<img
+            <Fragment>
+                {
+                    this.state.likeActive ?
+                        (<div className="containerActive">
+                            <img
+                                src={icon_thumbUpBlue}
+                                onClick={() => this.handleLike()}
+                            />
+                        </div>) :
+                        (<div className="container">
+                            <img
+                                src={icon_thumbUp}
+                                onClick={() => this.handleLike()}
+                                className="active"
+                            />
+                        </div>)
+                }
+                < div className="container" >
+
+                    <p>J'aime {this.state.like}</p>
+                    <img
                         src={icon_thumbUp}
                         onClick={() => this.handleLike()}
-                        className="active"
-                    />) :
-                    (<img
-                        src={icon_thumbUp}
-                        onClick={() => this.handleLike()}
-                    />)}
+                        className={"active" + this.state.likeActive}
+                    />
 
+                    <img
+                        src={icon_thumbDown}
+                        className={({ ["active"]: this.state.dislikeActive })}
+                        onClick={() => this.handleDislike()}
+                    />
 
-                <p>J'aime {this.state.like}</p>
-                <img
-                    src={icon_thumbUp}
-                    onClick={() => this.handleLike()}
-                    className={"active" + this.state.likeActive}
-                />
+                    <p>Je n'aime pas : {this.state.dislike}</p>
+                </div >
+            </Fragment>
 
-                <img
-                    src={icon_thumbDown}
-                    className={({ ["active"]: this.state.dislikeActive })}
-                    onClick={() => this.handleDislike()}
-                />
-
-                <p>Je n'aime pas : {this.state.dislike}</p>
-            </div >
         );
     }
 }
