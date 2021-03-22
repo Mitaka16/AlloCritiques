@@ -1,5 +1,4 @@
 header {
-  position: absolute;
   top: 0;
   background-color: #bdd0f5;
   color: #1e1e1e;
@@ -12,17 +11,13 @@ header {
 .Logo_Header {
   font-size: 20px;
   display: flex;
-  text-decoration: none;
   justify-content: baseline;
   align-items: center;
-  margin-left: 10px;
-}
-.Logo_Header:visited {
-  color: #1e1e1e;
+  margin-left: 25px;
 }
 .Logo_Header img {
   height: 125px;
-  padding-right: 5px;
+  padding-right: 15px;
 }
 .Bouton_Header {
   display: flex;

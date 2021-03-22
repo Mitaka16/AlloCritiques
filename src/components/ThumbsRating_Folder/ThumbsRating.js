@@ -36,11 +36,12 @@ class ThumbsRating extends Component {
         <img
           onClick={this.ThumsUp}
           src={icon_thumbUp}
+          alt=''
         />
         <img
           onClick={this.ThumsDown}
           src={icon_thumbDown}
-          
+          alt=''
         />
 
         <p>{this.state.compteurDown}</p>

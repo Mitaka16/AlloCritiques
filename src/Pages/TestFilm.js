@@ -1,15 +1,33 @@
-// import React from 'react'
-import './testFilm.css'
-import MovieList from '../components/MovieList'
+import React, {Component, Fragment} from 'react'
+import { Link } from 'react-router-dom'
+import MovieList from "../components/MovieList";
 
-function Film() {
-    return (
-        MovieList.map(el => {
-            return (
-                <a href='https://www.allocine.fr/film/fichefilm_gen_cfilm=182745.html'><img src={el.poster} alt='Poster film' /></a>
-                )
-            })
-    )
-}
+class Film extends Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+             Info_Film: null
+        }
+    }
+    
 
-export default Film
+    handleClickPage = (e) => {
+        this.setState({
+            Info_Film: e.target.currentSrc
+        })
+        console.log(e.target.currentSrc)
+    }
+                
+    render() {
+        return (
+                    MovieList.map((el, i) => {
+                        return (
+                        <Fragment key={i}>
+                         <Link to='/Critics'><img onClick={this.handleClickPage} src={el.poster} alt="" /></Link>   
+                        </Fragment>    
+                        )
+                    })
+            )}}
+
+export default Film;

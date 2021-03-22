@@ -7,6 +7,7 @@ import Wishlist from "./Pages/Wishlist/Wishlist";
 import SignInSignUp from "./Pages/SignIn-SignUp/SignIn-SignUp";
 import Nbr from "./Pages/HomePage/Carousel";
 import Film from "./Pages/TestFilm";
+import CriticsPage from './Pages/CriticsPageFolder/criticsPage'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/Wishlist' component={Wishlist} />
           <Route path='/SignIn' component={SignInSignUp} />
           <Route path='/Test' component={Film} />
+          <Route path='/Critics' component={CriticsPage} />
         </Switch>
       </BrowserRouter>
 

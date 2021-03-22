@@ -17,7 +17,6 @@ import Harry_Potter from './DossierAffiches/Harry_Potter.jpg'
 
 function Nbr () {
   return (
-    <div>
       <Carousel>
         <img className='carousel-img' alt='Poster Skyfall' src={Skyfall} />
         <img className='carousel-img' alt='Poster Intouchables' src={Intouchables} />
@@ -30,7 +29,6 @@ function Nbr () {
         <img className='carousel-img' alt='Poster Avengers IW' src={Avengers_IW}/>
         <img className='carousel-img' alt='Poster Harry Potter' src={Harry_Potter}/>
       </Carousel>
-    </div>
   );
 }
 export default Nbr;

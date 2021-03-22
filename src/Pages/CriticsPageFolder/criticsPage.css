@@ -1,11 +1,13 @@
 .criticsPage {
+    height: 100%;
+    margin-top: 130px;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #1e1e1e;
     color: #1e1e1e;
-    height: 300%;
   }
  
   
