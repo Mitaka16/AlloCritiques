@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Logo from '../../Images/Logos/Logo_AlloCritiques.png'
 import { Link } from 'react-router-dom'
 import "../Header_Footer/header.css"
+import { DATAS } from '../../constantes/MOCKDATA'
 
 class Header extends Component {
     constructor(props) {
@@ -18,12 +19,12 @@ class Header extends Component {
             <header>
                 <div className='Logo_Header'>
                     <img src={Logo} alt='Logo AlloCritiques' />
-                    <h1>Allo<span style={{ color: '#EB5757' }}>Critiques</span></h1>
+                    <h1>{DATAS.ALLOCRITIQUES}</h1>
                 </div>
                 <div className='Bouton_Header'>
-                    <Link className='nav-bouton' to='/'>Accueil</Link>
-                    <Link className='nav-bouton' to='/Wishlist'>Wishlist</Link>
-                    {Logged ? <Link className='nav-bouton-account' to='/MyAccount'>Mon Compte</Link> : <Link className='nav-bouton-' to='/SignIn'>Se connecter / S'inscrire</Link>}
+                    <Link className='nav-bouton' to='/'>{DATAS.ACCUEIL}</Link>
+                    <Link className='nav-bouton' to='/Wishlist'>{DATAS.WISHLIST}</Link>
+                    {Logged ? <Link className='nav-bouton-account' to='/MyAccount'>{DATAS.ACCOUNT}</Link> : <Link className='nav-bouton-' to='/SignIn'>{DATAS.LOG_REGISTER}</Link>}
                 </div>
             </header>
         )

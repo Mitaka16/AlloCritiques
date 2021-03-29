@@ -1,6 +1,6 @@
 export const LABELS = {
     SURNAME: "surname",
-    NAME: "name",
+    NAME: "Name",
     EMAIL_VALID: "email",
     PASSWORD: "password",
     CONFIRM_PASSWORD: "confirmPassword"
@@ -8,10 +8,8 @@ export const LABELS = {
 export const ETIQUETTES = {
     PRENOM: "prenom",
     NOM: "nom",
-    IDENTIFIANT: "identifiant",
-    EMAIL: "email",
-    MOT_DE_PASSE: "motDePasse",
-    MOT_DE_PASSE_CONFIRMER: "confirmerMotDePasse",
+    IDENTIFIANT: "Identifiant",
+    EMAIL: " Adresse email",
+    MOT_DE_PASSE: "Mot de passe",
+    MOT_DE_PASSE_CONFIRMER: "Confirmer mot de passe",
 }
-
-

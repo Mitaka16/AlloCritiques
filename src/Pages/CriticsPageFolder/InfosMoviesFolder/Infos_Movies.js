@@ -4,6 +4,7 @@ import Favorite_On from "../../../Images/Logos/Favorite_Coeur_On.svg";
 import Favorite_Off from "../../../Images/Logos/Favorite_Coeur_Off.svg";
 // import StarRating from "../../../components/StarRating_Folder/StarRating";
 import MovieList from "../../../components/MovieList";
+import { DATAS, MOVIES } from "../../../constantes/MOCKDATA";
 
 class Infos_Movies extends Component {
   constructor(props) {
@@ -31,7 +32,7 @@ class Infos_Movies extends Component {
             onClick={this.handleWhishlist}
             alt="icon favoris"
           />
-          Ajouter à la Whilshlist ?
+          {DATAS.ADD_WISHLIST}
         </button>
       );
     } else {
@@ -43,7 +44,7 @@ class Infos_Movies extends Component {
             src={Favorite_On}
             alt="icon favoris"
           />
-          Dans la Whishlist
+          {DATAS.IN_WISHLIST}
         </button>
       );
     }
@@ -57,26 +58,26 @@ class Infos_Movies extends Component {
             </h2>
             <div className="Infos_Film">
               <div>
-                <span className="span_infoMovie">Date de sortie: </span>
+                <span className="span_infoMovie">{MOVIES.RELEASED}</span>
                 {el.released}
                 <br />
-                <span className="span_infoMovie">Durée: </span>
-                {el.runtime} min
+                <span className="span_infoMovie">{MOVIES.RUNTIME}</span>
+                {el.runtime} {MOVIES.MIN}
                 <br />
-                <span className="span_infoMovie">Genre: </span>
+                <span className="span_infoMovie">{MOVIES.GENRE}</span>
                 {el.genre}
                 <br />
-                <span className="span_infoMovie">Réalisateur: </span>
+                <span className="span_infoMovie">{MOVIES.DIRECTOR}</span>
                 {el.director}
                 <br />
-                <span className="span_infoMovie">Acteurs: </span>
+                <span className="span_infoMovie">{MOVIES.ACTORS}</span>
                 {el.actors}
               </div>
               <div className="bouton_favoris">{bouttonWhishlist}</div>
             </div>
 
             <p className="Synopsis">
-              <span className="span_infoMovie">Synopsis: </span>
+              <span className="span_infoMovie">{MOVIES.SYNOPSIS}</span>
               {el.plot}
             </p>
           </div>

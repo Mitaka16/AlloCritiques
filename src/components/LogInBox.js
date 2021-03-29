@@ -1,6 +1,7 @@
 import React from 'react';
 import { ERREURS_ETIQUETTES } from '../constantes/ERRORS_LABELS'
 import { ETIQUETTES } from '../constantes/LABELS'
+import { DATAS } from '../constantes/MOCKDATA';
 import Input from "./Input";
 
 class LoginBox extends React.Component {
@@ -61,13 +62,13 @@ class LoginBox extends React.Component {
             <div className="inner-container">
 
                 <div className="header-signin">
-                    Connexion
+                    {DATAS.CONNEXION}
           </div>
 
                 <div className="box">
 
                     <div className="input-group">
-                        <label htmlFor={ETIQUETTES.IDENTIFIANT}>Identifiant</label>
+                        <label htmlFor={ETIQUETTES.IDENTIFIANT}>{ETIQUETTES.IDENTIFIANT}</label>
                         <Input
                             type="text"
                             name={ETIQUETTES.IDENTIFIANT}
@@ -80,7 +81,7 @@ class LoginBox extends React.Component {
 
 
                     <div className="input-group">
-                        <label htmlFor={ETIQUETTES.MOT_DE_PASSE}>Mot de passe</label>
+                        <label htmlFor={ETIQUETTES.MOT_DE_PASSE}>{ETIQUETTES.MOT_DE_PASSE}</label>
                         <Input
                             type="password"
                             name={ETIQUETTES.MOT_DE_PASSE}
@@ -94,7 +95,7 @@ class LoginBox extends React.Component {
 
 
                     <button type="button" className="login-btn" onClick={this.handleSubmit}>
-                        Se connecter
+                        {DATAS.CONNEXION}
             </button>
 
                 </div>

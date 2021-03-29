@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import { DATAS } from "../../constantes/MOCKDATA";
 import './contact.css'
 
 class Modal extends Component {
@@ -20,10 +21,9 @@ class Modal extends Component {
           <div className="modal" >
         <div>
           <p>
-            Un probleme ? Une erreur dans notre site ? Une remarque ?<br /><br />
-            Pour toute question ou remarque, veuillez nous contacter sur Slack (Théo, Imen, Alan) ou par mail
+           {DATAS.BTN_CONTACT}
           </p>
-          <button onClick={this.props.close}>Fermer</button>
+          <button onClick={this.props.close}>{DATAS.FERMER}</button>
         </div>
       </div>,
     this.popUpContainer

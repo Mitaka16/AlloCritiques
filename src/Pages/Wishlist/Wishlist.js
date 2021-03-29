@@ -8,12 +8,13 @@ import Intouchables  from '../../Images/Films/Intouchables.jpg'
 import Invictus  from '../../Images/Films/Invictus.jpg'
 import Les_Indestructibles  from '../../Images/Films/Les_Indestructibles.jpg'
 import Mortal_Kombat from '../../Images/Films/Mortal_Kombat.jpg'
+import {DATAS} from '../../constantes/MOCKDATA'
 
 class Wishlist extends Component {
     render() {
         return (
             <div className='Wishlist'>
-                <h1>Wishlist</h1>
+                <h1>{DATAS.WISHLIST}</h1>
                 <section>
                     <img src={Inception} alt='Poster Inception' />
                     <img src={Independence_Day} alt='Poster Independence_Day' />
