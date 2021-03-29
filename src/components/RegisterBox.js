@@ -1,6 +1,7 @@
 import React from 'react';
 import { ERREURS_ETIQUETTES } from '../constantes/ERRORS_LABELS'
 import { ETIQUETTES } from '../constantes/LABELS'
+import { DATAS } from '../constantes/MOCKDATA';
 import Input from "./Input";
 
 class RegisterBox extends React.Component {
@@ -100,13 +101,13 @@ class RegisterBox extends React.Component {
             <div className="inner-container">
 
                 <div className="header-signin">
-                    Inscription
+                    {DATAS.INSCRIPTION}
           </div>
 
                 <div className="box">
 
                     <div className="input-group">
-                        <label htmlFor={ETIQUETTES.IDENTIFIANT}>Identifiant</label>
+                        <label htmlFor={ETIQUETTES.IDENTIFIANT}>{ETIQUETTES.IDENTIFIANT}</label>
                         <Input
                             type="text"
                             name={ETIQUETTES.IDENTIFIANT}
@@ -118,7 +119,7 @@ class RegisterBox extends React.Component {
                     </div>
 
                     <div className="input-group">
-                        <label htmlFor={ETIQUETTES.EMAIL}>Adresse email</label>
+                        <label htmlFor={ETIQUETTES.EMAIL}>{ETIQUETTES.EMAIL}</label>
                         <Input
                             type="text"
                             name={ETIQUETTES.EMAIL}
@@ -131,7 +132,7 @@ class RegisterBox extends React.Component {
 
 
                     <div className="input-group">
-                        <label htmlFor={ETIQUETTES.MOT_DE_PASSE}>Mot de passe</label>
+                        <label htmlFor={ETIQUETTES.MOT_DE_PASSE}>{ETIQUETTES.MOT_DE_PASSE}</label>
                         <Input
                             type="password"
                             name={ETIQUETTES.MOT_DE_PASSE}
@@ -143,7 +144,7 @@ class RegisterBox extends React.Component {
                     </div>
 
                     <div className="input-group">
-                        <label htmlFor={ETIQUETTES.MOT_DE_PASSE_CONFIRMER}>Confirmez le mot de passe</label>
+                        <label htmlFor={ETIQUETTES.MOT_DE_PASSE_CONFIRMER}>{ETIQUETTES.MOT_DE_PASSE_CONFIRMER}</label>
                         <Input
                             type="password"
                             name={ETIQUETTES.MOT_DE_PASSE_CONFIRMER}
@@ -156,7 +157,7 @@ class RegisterBox extends React.Component {
                     </div>
 
                     <button type="button" className="login-btn" onClick={this.handleSubmit}>
-                        S'inscrire
+                        {DATAS.INSCRIRE}
             </button>
 
                 </div>

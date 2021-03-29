@@ -3,6 +3,7 @@ import React from 'react'
 import reactDOM from 'react-dom'
 import { ERREURS_ETIQUETTES } from './constantes/ERRORS_LABELS'
 import { ETIQUETTES } from './constantes/LABELS'
+import { DATAS } from '../constantes/MOCKDATA'
 
 class App extends React.Component {
 
@@ -33,7 +34,7 @@ class App extends React.Component {
                             ? "selected-controller"
                             : "")}
                         onClick={this.showLoginBox}>
-                        Connexion
+                        {DATAS.CONNEXION}
           </div>
 
                     <div
@@ -43,7 +44,7 @@ class App extends React.Component {
                             : "")}
 
                         onClick={this.showRegisterBox}>
-                        Inscription
+                        {DATAS.INSCRIPTION}
           </div>
                 </div>
 
@@ -116,13 +117,13 @@ class LoginBox extends React.Component {
             <div className="inner-container">
 
                 <div className="header">
-                    Connexion
+                    {DATAS.CONNEXION}
         </div>
 
                 <div className="box">
 
                     <div className="input-group">
-                        <label htmlFor={ETIQUETTES.IDENTIFIANT}>Identifiant</label>
+                        <label htmlFor={ETIQUETTES.IDENTIFIANT}>{ETIQUETTES.IDENTIFIANT}</label>
                         <input
                             type="text"
                             name={ETIQUETTES.IDENTIFIANT}
@@ -135,7 +136,7 @@ class LoginBox extends React.Component {
 
 
                     <div className="input-group">
-                        <label htmlFor={ETIQUETTES.MOT_DE_PASSE}>Mot de passe</label>
+                        <label htmlFor={ETIQUETTES.MOT_DE_PASSE}>{ETIQUETTES.MOT_DE_PASSE}</label>
                         <input
                             type="password"
                             name={ETIQUETTES.MOT_DE_PASSE}
@@ -149,7 +150,7 @@ class LoginBox extends React.Component {
 
 
                     <button type="button" className="login-btn" onClick={this.handleSubmit}>
-                        Se connecter
+                        {DATAS.CONNEXION}
           </button>
 
                 </div>
@@ -256,13 +257,13 @@ class RegisterBox extends React.Component {
             <div className="inner-container">
 
                 <div className="header">
-                    Inscription
+                    {DATAS.INSCRIPTION}
         </div>
 
                 <div className="box">
 
                     <div className="input-group">
-                        <label htmlFor={ETIQUETTES.IDENTIFIANT}>Identifiant</label>
+                        <label htmlFor={ETIQUETTES.IDENTIFIANT}>{ETIQUETTES.IDENTIFIANT}</label>
                         <input
                             type="text"
                             name={ETIQUETTES.IDENTIFIANT}
@@ -274,7 +275,7 @@ class RegisterBox extends React.Component {
                     </div>
 
                     <div className="input-group">
-                        <label htmlFor={ETIQUETTES.EMAIL}>Adresse email</label>
+                        <label htmlFor={ETIQUETTES.EMAIL}>{ETIQUETTES.EMAIL}</label>
                         <input
                             type="text"
                             name={ETIQUETTES.EMAIL}
@@ -287,7 +288,7 @@ class RegisterBox extends React.Component {
 
 
                     <div className="input-group">
-                        <label htmlFor={ETIQUETTES.MOT_DE_PASSE}>Mot de passe</label>
+                        <label htmlFor={ETIQUETTES.MOT_DE_PASSE}>{ETIQUETTES.MOT_DE_PASSE}</label>
                         <input
                             type="password"
                             name={ETIQUETTES.MOT_DE_PASSE}
@@ -299,7 +300,7 @@ class RegisterBox extends React.Component {
                     </div>
 
                     <div className="input-group">
-                        <label htmlFor={ETIQUETTES.MOT_DE_PASSE_CONFIRMER}>Confirmez le mot de passe</label>
+                        <label htmlFor={ETIQUETTES.MOT_DE_PASSE_CONFIRMER}>{ETIQUETTES.MOT_DE_PASSE_CONFIRMER}</label>
                         <input
                             type="password"
                             name={ETIQUETTES.MOT_DE_PASSE_CONFIRMER}
@@ -312,7 +313,7 @@ class RegisterBox extends React.Component {
                     </div>
 
                     <button type="button" className="login-btn" onClick={this.handleSubmit}>
-                        S'inscrire
+                        {DATAS.INSCRIRE}
           </button>
 
                 </div>

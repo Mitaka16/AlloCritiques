@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import StarRating from '../StarRating_Folder/StarRating'
+import {DATAS} from '../../constantes/MOCKDATA'
 import './addCritic.css'
 
 
@@ -40,7 +41,7 @@ class AddCritic extends Component {
                     <button
                         className="addCriticInput__btn"
                         onClick={this.handleSubmit}
-                    >Valider
+                    >{DATAS.VALIDER}
                     </button>
 
                 </div>

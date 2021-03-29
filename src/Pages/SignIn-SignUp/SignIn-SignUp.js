@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import LoginBox from "../../components/LogInBox";
 import RegisterBox from "../../components/RegisterBox";
+import { DATAS } from "../../constantes/MOCKDATA";
 import "./signIn-SignUp.css";
 
 class SignInSignUp extends Component {
@@ -31,7 +32,7 @@ class SignInSignUp extends Component {
             }
             onClick={this.showLoginBox}
           >
-            Connexion
+            {DATAS.CONNEXION}
           </div>
 
           <div
@@ -41,7 +42,7 @@ class SignInSignUp extends Component {
             }
             onClick={this.showRegisterBox}
           >
-            Inscription
+            {DATAS.INSCRIPTION}
           </div>
         </div>
 

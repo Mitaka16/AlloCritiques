@@ -4,6 +4,7 @@ import Modal from './Contact'
 import Instagram from '../../Images/Logos/Instagram.svg'
 import Facebook from '../../Images/Logos/Facebook.svg'
 import Twitter from '../../Images/Logos/Twitter.svg'
+import { DATAS } from "../../constantes/MOCKDATA"
 
 class Footer extends Component {
     constructor(props) {    
@@ -27,9 +28,9 @@ class Footer extends Component {
 
         return (
             <footer className='Footer'>
-                <div className='Copyright'><p>© Copyright</p></div>
+                <div className='Copyright'><p>{DATAS.COPYRIGHT}</p></div>
 
-                <button className='Contact' onClick={this.handleShow}>Contact</button>
+                <button className='Contact' onClick={this.handleShow}>{DATAS.CONTACT}</button>
                 {modal}
 
                 <div className='Logo_Reseau'>
