@@ -1,7 +1,8 @@
 export const DATAS = {
     WISHLIST: 'Wishlist',
     VALIDER: 'Valider',
-    BTN_CONTACT: ' Un probleme ? Une erreur dans notre site ? Une remarque ? Pour toute question ou remarque, veuillez nous contacter sur Slack (Théo, Imen, Alan) ou par mail',
+    BTN_CONTACT: 'Un probleme ? Une erreur dans notre site ? Une remarque ?',
+    BTN_CONTACT2: 'Pour toute question ou remarque, veuillez nous contacter sur Slack (Théo, Imen, Alan) ou par mail',
     FERMER: 'Fermer',
     COPYRIGHT: '© Copyright',
     CONTACT: 'Contact',
@@ -18,7 +19,7 @@ export const DATAS = {
     GOOD_CRITICS: 'Commentaires Positifs',
     CRITICS: 'Lorem ipsum tas nec. Donec tempor libero eu metus molestie sagittis. Sed dignissim gravida orci. Curabitur luctus nulla metus, sed  blandit sem egestas nec. Donec tempor libero eu metus molestie sagittis.',
     SEARCH: 'Search',
-    
+
 }
 
 export const MOVIES = {

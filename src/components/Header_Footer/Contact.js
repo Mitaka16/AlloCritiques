@@ -17,16 +17,15 @@ class Modal extends Component {
   }
 
   render() {
-      return ReactDOM.createPortal(
-          <div className="modal" >
+    return ReactDOM.createPortal(
+      <div className="modal" onClick={this.props.close} >
         <div>
-          <p>
-           {DATAS.BTN_CONTACT}
-          </p>
+          <p>{DATAS.BTN_CONTACT}</p>
+          <p>{DATAS.BTN_CONTACT2}</p>
           <button onClick={this.props.close}>{DATAS.FERMER}</button>
         </div>
       </div>,
-    this.popUpContainer
+      this.popUpContainer
     );
   }
 }
