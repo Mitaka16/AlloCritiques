@@ -3,7 +3,7 @@ import "./Reviews.css";
 import iconOpenSection from "../../../Images/Icons/icon_openSectionComments.svg";
 import icon_ProfileCommented_Girl from "../../../Images/Icons/icon_ProfileCommented_Girl.svg";
 import StarRating from "../../../components/StarRating_Folder/StarRating";
-import ThumbsRating from "../../../components/ThumbsRating_Folder/ThumbsRating"
+import LikeDislikeButtons from "../../../components/LikeDislikeButtons_Folder/LikeDislikeButtons"
 import { DATAS } from "../../../constantes/MOCKDATA";
 import { LABELS } from "../../../constantes/LABELS";
 
@@ -26,8 +26,8 @@ class NegativeReviews extends Component {
                     </div>
                     <p className="CommentSection_Comment">
                         {DATAS.CRITICS}
-          </p>
-                    <ThumbsRating />
+                    </p>
+                    <LikeDislikeButtons />
                 </div>
 
             </div>
