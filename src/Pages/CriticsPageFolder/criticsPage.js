@@ -1,4 +1,4 @@
-import "./criticsPage.css"
+import "./criticsPage.css";
 import React from 'react';
 import Infos_Movies from './InfosMoviesFolder/Infos_Movies';
 import AddCritic from './AddCriticFolder/AddCritic';

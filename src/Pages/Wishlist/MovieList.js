@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { MovieContext } from "../../contexts/MovieContext";
 import MovieDetails from './MovieDetails';
 import "../Wishlist/wishlist.css"
+import { DATAS } from '../../constantes/MOCKDATA';
 
 
 
@@ -16,7 +17,7 @@ const MovieList = () => {
             </ul>
         </div>
     ) : (
-        <div className="empty">Ajoutez des films à votre wishlist ! ;) </div>
+        <div className="empty">{DATAS.EMPTY}</div>
     )
 }
 

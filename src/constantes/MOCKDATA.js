@@ -13,12 +13,17 @@ export const DATAS = {
     CONNEXION: 'Connexion',
     INSCRIPTION: 'Inscription',
     INSCRIRE: 'S\'inscrire',
-    ADD_WISHLIST: 'Ajouter à la Whilshlist ?',
-    IN_WISHLIST: 'Dans la Whishlist',
+    MY_WISHLIST: 'Ma Wishlist',
+    ADD_WISHLIST: 'Ajouter à la Wishlist ?',
+    IN_WISHLIST: 'Dans la Wishlist',
+    ONE_MOVIE_WISHLIST: ' film dans la Wishlist',
+    MOVIES_WISHLIST: ' films dans la Wishlist',
     BAD_CRITICS: 'Commentaires Négatifs',
     GOOD_CRITICS: 'Commentaires Positifs',
     CRITICS: 'Lorem ipsum tas nec. Donec tempor libero eu metus molestie sagittis. Sed dignissim gravida orci. Curabitur luctus nulla metus, sed  blandit sem egestas nec. Donec tempor libero eu metus molestie sagittis.',
     SEARCH: 'Search',
+    EMPTY: "Ajoutez des films à votre wishlist ! ;)",
+    DELETE: "Supprimer"
 
 }
 
