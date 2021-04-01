@@ -8,22 +8,25 @@ import SignInSignUp from "./Pages/SignIn-SignUp/SignIn-SignUp";
 import Nbr from "./Pages/HomePage/Carousel";
 import Film from "./Pages/TestFilm";
 import CriticsPage from './Pages/CriticsPageFolder/criticsPage'
+import DatasUserContextProvider from "./contexts/UserContext"
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Header />
-        <Switch>
-          <Route exact path='/' component={Nbr} />
-          <Route path='/Wishlist' component={Wishlist} />
-          <Route path='/SignIn' component={SignInSignUp} />
-          <Route path='/Test' component={Film} />
-          <Route path='/Critics' component={CriticsPage} />
-        </Switch>
-      </BrowserRouter>
+      <DatasUserContextProvider>
+        <BrowserRouter>
+          <Header />
+          <Switch>
+            <Route exact path='/' component={Nbr} />
+            <Route path='/Wishlist' component={Wishlist} />
+            <Route path='/SignIn' component={SignInSignUp} />
+            <Route path='/Test' component={Film} />
+            <Route path='/Critics' component={CriticsPage} />
+          </Switch>
+        </BrowserRouter>
 
-      <Footer />
+        <Footer />
+      </DatasUserContextProvider>
     </div>
   );
 }

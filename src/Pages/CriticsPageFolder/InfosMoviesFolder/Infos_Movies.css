@@ -49,6 +49,11 @@
   width: 80%;
   text-align: justify;
 }
+.wishlist-text{
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2em;
+}
 
 @media (max-width: 1145px) {
   .Infos {

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./Infos_Movies.css";
 import Favorite_On from "../../../Images/Logos/Favorite_Coeur_On.svg";
 import Favorite_Off from "../../../Images/Logos/Favorite_Coeur_Off.svg";
-// import StarRating from "../../../components/StarRating_Folder/StarRating";
 import MovieList from "../../../components/MovieList";
 import { DATAS, MOVIES } from "../../../constantes/MOCKDATA";
 
@@ -32,7 +31,7 @@ class Infos_Movies extends Component {
             onClick={this.handleWhishlist}
             alt="icon favoris"
           />
-          {DATAS.ADD_WISHLIST}
+          <p className="wishlist-text">{DATAS.ADD_WISHLIST}</p>
         </button>
       );
     } else {
@@ -44,46 +43,47 @@ class Infos_Movies extends Component {
             src={Favorite_On}
             alt="icon favoris"
           />
-          {DATAS.IN_WISHLIST}
+          <p className="wishlist-text">{DATAS.IN_WISHLIST}</p>
         </button>
       );
     }
-    return MovieList.map((el, i) => {
-      return (
-        <div key={i} className="Infos">
-          <img src={el.poster} alt="Poster Film" />
-          <div className="Info_Container">
-            <h2 className="Infos_Titre">
-              <span>{el.title}</span>
-            </h2>
-            <div className="Infos_Film">
-              <div>
-                <span className="span_infoMovie">{MOVIES.RELEASED}</span>
-                {el.released}
-                <br />
-                <span className="span_infoMovie">{MOVIES.RUNTIME}</span>
-                {el.runtime} {MOVIES.MIN}
-                <br />
-                <span className="span_infoMovie">{MOVIES.GENRE}</span>
-                {el.genre}
-                <br />
-                <span className="span_infoMovie">{MOVIES.DIRECTOR}</span>
-                {el.director}
-                <br />
-                <span className="span_infoMovie">{MOVIES.ACTORS}</span>
-                {el.actors}
-              </div>
-              <div className="bouton_favoris">{bouttonWhishlist}</div>
+    // return MovieList.map((el, i) => {
+    return (
+      <div key={"i"} className="Infos">
+        {/* <img src={"el.poster"} alt="Poster Film" /> */}
+        <img src="https://fr.web.img5.acsta.net/c_310_420/medias/nmedia/18/83/93/95/19803697.jpg" alt="Poster Film" />
+        <div className="Info_Container">
+          <h2 className="Infos_Titre">
+            <span>{"el.title"}</span>
+          </h2>
+          <div className="Infos_Film">
+            <div>
+              <span className="span_infoMovie">{"MOVIES.RELEASED"}</span>
+              {"el.released"}
+              <br />
+              <span className="span_infoMovie">{"MOVIES.RUNTIME"}</span>
+              {"el.runtime"} {"MOVIES.MIN"}
+              <br />
+              <span className="span_infoMovie">{"MOVIES.GENRE"}</span>
+              {"el.genre"}
+              <br />
+              <span className="span_infoMovie">{"MOVIES.DIRECTOR"}</span>
+              {"el.director"}
+              <br />
+              <span className="span_infoMovie">{"MOVIES.ACTORS"}</span>
+              {"el.actors"}
             </div>
-
-            <p className="Synopsis">
-              <span className="span_infoMovie">{MOVIES.SYNOPSIS}</span>
-              {el.plot}
-            </p>
+            <div className="bouton_favoris">{"bouttonWhishlist"}</div>
           </div>
+
+          <p className="Synopsis">
+            <span className="span_infoMovie">{"MOVIES.SYNOPSIS"}</span>
+            {"el.plot"}
+          </p>
         </div>
-      );
-    });
+      </div>
+    );
+    // });
   }
 }
 

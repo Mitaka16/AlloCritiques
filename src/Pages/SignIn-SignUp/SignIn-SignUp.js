@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import LoginBox from "../../components/LogInBox";
-import RegisterBox from "../../components/RegisterBox";
+import LoginBox from "./LogInBox";
+import RegisterBox from "./RegisterBox";
 import { DATAS } from "../../constantes/MOCKDATA";
 import "./signIn-SignUp.css";
 
