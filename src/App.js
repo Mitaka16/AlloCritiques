@@ -24,7 +24,6 @@ function App() {
             <Route path='/Critics' component={CriticsPage} />
           </Switch>
         </BrowserRouter>
-
         <Footer />
       </DatasUserContextProvider>
     </div>

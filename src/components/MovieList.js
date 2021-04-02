@@ -32,7 +32,7 @@ export const MovieList = [
         released: '5 octobre 1994',
         year: 1994,
         runtime: 142,
-        genre: ['Drame, ', 'Romance, ','Comédie'],
+        genre: ['Drame, ', 'Romance, ', 'Comédie'],
         director: 'Robert Zemeckis',
         actors: ['Tom Hanks, ', 'Rebecca Williams, ', 'Sally Field'],
         plot: 'Quelques décennies d\'histoire américaine, des années 1940 à la fin du XXème siècle, à travers le regard et l\'étrange odyssée d\'un homme simple et pur, Forrest Gump.',
@@ -216,32 +216,32 @@ export const MovieList = [
         ],
     },
     {
-    id: 'I9',
-    title: 'Intouchables',
-    released: '2 Novembre 2011',
-    year: 2011,
-    runtime: 112,
-    genre: ['Drame'],
-    director: 'Eric Toledano',
-    actors: ['François Cluzet, ', 'Omar Sy, ', 'Anne Le Ly'],
-    plot: 'A la suite d’un accident de parapente, Philippe, riche aristocrate, engage comme aide à domicile Driss, un jeune de banlieue tout juste sorti de prison. Bref la personne la moins adaptée pour le job. Ensemble ils vont faire cohabiter Vivaldi et Earth Wind and Fire, le verbe et la vanne, les costumes et les bas de survêtement... Deux univers vont se télescoper, s’apprivoiser, pour donner naissance à une amitié aussi dingue, drôle et forte qu’inattendue, une relation unique qui fera des étincelles et qui les rendra... Intouchables.',
-    country: 'France',
-    poster: 'https://fr.web.img3.acsta.net/c_310_420/o_club300-310x420.png_0_se/medias/nmedia/18/82/69/17/19806656.jpg',
-    Ratings: [
-        {
-            Source: '',
-            Value: ''
-        },
-        {
-            Source: '',
-            Value: ''
-        },
-        {
-            Source: '',
-            Value: ''
-        }
-    ],
-}
+        id: 'I9',
+        title: 'Intouchables',
+        released: '2 Novembre 2011',
+        year: 2011,
+        runtime: 112,
+        genre: ['Drame'],
+        director: 'Eric Toledano',
+        actors: ['François Cluzet, ', 'Omar Sy, ', 'Anne Le Ly'],
+        plot: 'A la suite d’un accident de parapente, Philippe, riche aristocrate, engage comme aide à domicile Driss, un jeune de banlieue tout juste sorti de prison. Bref la personne la moins adaptée pour le job. Ensemble ils vont faire cohabiter Vivaldi et Earth Wind and Fire, le verbe et la vanne, les costumes et les bas de survêtement... Deux univers vont se télescoper, s’apprivoiser, pour donner naissance à une amitié aussi dingue, drôle et forte qu’inattendue, une relation unique qui fera des étincelles et qui les rendra... Intouchables.',
+        country: 'France',
+        poster: 'https://fr.web.img3.acsta.net/c_310_420/o_club300-310x420.png_0_se/medias/nmedia/18/82/69/17/19806656.jpg',
+        Ratings: [
+            {
+                Source: '',
+                Value: ''
+            },
+            {
+                Source: '',
+                Value: ''
+            },
+            {
+                Source: '',
+                Value: ''
+            }
+        ],
+    }
 ]
 
 export default MovieList
