@@ -1,5 +1,6 @@
 export const DATAS = {
     WISHLIST: 'Wishlist',
+    WATCHED: 'Films vus',
     VALIDER: 'Valider',
     BTN_CONTACT: 'Un probleme ? Une erreur dans notre site ? Une remarque ?',
     BTN_CONTACT2: 'Pour toute question ou remarque, veuillez nous contacter sur Slack (Théo, Imen, Alan) ou par mail',

@@ -1,8 +1,9 @@
+import "../Header_Footer/header.css"
 import React, { Component } from 'react'
 import Logo from '../../Images/Logos/Logo_AlloCritiques.png'
 import { Link } from 'react-router-dom'
-import "../Header_Footer/header.css"
 import { DATAS } from '../../constantes/MOCKDATA'
+import SearchBar from "../SearchBar/SearchBar"
 
 class Header extends Component {
     constructor(props) {
@@ -22,8 +23,16 @@ class Header extends Component {
                     <h1>{DATAS.ALLOCRITIQUES}</h1>
                 </div>
                 <div className='Bouton_Header'>
-                    <Link className='nav-bouton' to='/'>{DATAS.ACCUEIL}</Link>
-                    <Link className='nav-bouton' to='/Wishlist'>{DATAS.WISHLIST}</Link>
+                    <SearchBar />
+                    <Link className='nav-bouton' to='/'>
+                        {DATAS.ACCUEIL}
+                    </Link>
+                    <Link className='nav-bouton' to='/Wishlist'>
+                        {DATAS.WISHLIST}
+                    </Link>
+                    <Link className='nav-bouton' to='/Watched'>
+                        {DATAS.WATCHED}
+                    </Link>
                     {Logged ? <Link className='nav-bouton-account' to='/MyAccount'>{DATAS.ACCOUNT}</Link> : <Link className='nav-bouton-' to='/SignIn'>{DATAS.LOG_REGISTER}</Link>}
                 </div>
             </header>

@@ -3,7 +3,7 @@ import { ERREURS_ETIQUETTES } from '../../constantes/ERRORS_LABELS'
 import { ETIQUETTES } from '../../constantes/LABELS'
 import { DATAS } from '../../constantes/MOCKDATA';
 import Input from "../../components/Input";
-import { DatasUserContext } from "../../contexts/UserContext"
+import { DatasUserContext } from "../../context/UserContext"
 
 class RegisterBox extends React.Component {
     static contextType = DatasUserContext;
