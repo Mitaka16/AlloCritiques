@@ -1,39 +1,44 @@
-import React, { Fragment } from 'react';
-import './carousel.css';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import { Carousel } from 'react-responsive-carousel';
-import SearchBar from "../../components/SearchBar/SearchBar"
-/*import funnel from './Barre/funnel.png'*/
+import React, {Component} from 'react';
+import Carousel from '@brainhubeu/react-carousel'
+import '@brainhubeu/react-carousel/lib/style.css'
 
 import Skyfall from './DossierAffiches/Skyfall.jpg'
 import Intouchables from './DossierAffiches/Intouchables.jpg'
 import Rebelle from './DossierAffiches/Rebelle.jpg'
 import Gladiator from './DossierAffiches/Gladiator.jpg'
-import Gardien_de_la_Galaxie from './DossierAffiches/Gardien_de_la_Galaxie.jpg'
-import Le_Parrain from './DossierAffiches/Le_Parrain.jpg'
-import LEmpereur_de_Paris from './DossierAffiches/LEmpereur_de_Paris.jpg'
-import Le_dernier_Diamant from './DossierAffiches/Le_dernier_Diamant.jpg'
+import HarryP from './DossierAffiches/Harry_Potter.jpg'
 import Avengers_IW from './DossierAffiches/Avengers_IW.jpg'
-import Harry_Potter from './DossierAffiches/Harry_Potter.jpg'
+import Le_Parrain from './DossierAffiches/Le_Parrain.jpg'
 
-function Home() {
-  return (
-    <Fragment>
-      <SearchBar />
+class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: 0,
+      slides: [
+        <img key={1} src={Gladiator} alt='Affiches film'/>,
+        <img key={2} src={Rebelle} alt='Affiches film'/>,
+        <img key={3} src={Intouchables} alt='Affiches film'/>,
+        <img key={4} src={Skyfall} alt='Affiches film'/>,
+        <img key={4} src={HarryP} alt='Affiches film'/>,
+        <img key={4} src={Avengers_IW} alt='Affiches film'/>,
+        <img key={4} src={Le_Parrain} alt='Affiches film'/>,
+      ],
+  }
+}
 
-      <Carousel>
-        <img className='carousel-img' alt='Poster Skyfall' src={Skyfall} />
-        <img className='carousel-img' alt='Poster Intouchables' src={Intouchables} />
-        <img className='carousel-img' alt='Poster Reblle' src={Rebelle} />
-        <img className='carousel-img' alt='Poster Gladiator' src={Gladiator} />
-        <img className='carousel-img' alt='Poster Gardien de la Galaxie' src={Gardien_de_la_Galaxie} />
-        <img className='carousel-img' alt='Poster Le Parrain' src={Le_Parrain} />
-        <img className='carousel-img' alt='Poster L Empereur de Paris' src={LEmpereur_de_Paris} />
-        <img className='carousel-img' alt='Poster Le dernier Diamant' src={Le_dernier_Diamant} />
-        <img className='carousel-img' alt='Poster Avengers IW' src={Avengers_IW} />
-        <img className='carousel-img' alt='Poster Harry Potter' src={Harry_Potter} />
-      </Carousel>
-    </Fragment>
-  );
+  render() {
+    return (
+      <div className='TestSlides'>
+          <Carousel
+          slides={this.state.slides}
+          slidesPerPage={6}
+          slideToScroll
+          infinite
+          arrows
+          />
+      </div>
+    );
+  }
 }
 export default Home;
