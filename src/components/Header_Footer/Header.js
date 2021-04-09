@@ -1,6 +1,6 @@
 import "../Header_Footer/header.css"
 import React, { Component } from 'react'
-import Logo from '../../Images/Logos/Logo_AlloCritiques.png'
+import Logo from '../../Assets/Logos/Logo_AlloCritiques.png'
 import { Link } from 'react-router-dom'
 import { DATAS } from '../../constantes/MOCKDATA'
 import SearchBar from "../SearchBar/SearchBar"

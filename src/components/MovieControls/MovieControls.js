@@ -1,5 +1,7 @@
 import React, { Fragment, useContext } from 'react';
-import { GlobalContext } from "../context/GlobalState";
+import { GlobalContext } from "../../context/GlobalState";
+import icon_eye from "../../Assets/Icons/icon_eye.svg";
+import "./movieControls.css"
 
 const MovieControls = ({ movie, type }) => {
     const { removeMovieFromWatchlist, addMovieToWatched, moveToWatchlist, removeFromWatched } = useContext(GlobalContext);
@@ -29,7 +31,7 @@ const MovieControls = ({ movie, type }) => {
                         className="ctrl-btn"
                         onClick={() => moveToWatchlist(movie)}
                     >
-                        <i className="fa-fw far fa-eye-slash" />
+                        <i>{icon_eye}</i>
                     </button>
 
                     <button className="ctrl-btn"

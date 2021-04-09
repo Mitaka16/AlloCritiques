@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Reviews.css";
-import iconOpenSection from "../../../Images/Icons/icon_openSectionComments.svg";
-import icon_ProfileCommented_Man from "../../../Images/Icons/icon_ProfileCommented_Man.svg";
+import iconOpenSection from "../../../Assets/Icons/icon_openSectionComments.svg";
+import icon_ProfileCommented_Man from "../../../Assets/Icons/icon_ProfileCommented_Man.svg";
 import StarRating from "../../../components/StarRating_Folder/StarRating";
 import LikeDislikeButtons from "../../../components/LikeDislikeButtons_Folder/LikeDislikeButtons"
 import { DATAS } from "../../../constantes/MOCKDATA";

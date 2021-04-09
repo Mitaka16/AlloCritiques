@@ -53,7 +53,7 @@ header {
 }
 
 .nav-bouton-account {
-  content: url(../../Images/Logos/Profile.svg);
+  content: url(../../Assets/Logos/Profile.svg);
 }
 
 @media (max-width: 1080px) {

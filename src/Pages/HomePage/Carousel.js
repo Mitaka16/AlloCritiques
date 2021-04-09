@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import './carousel.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel';
-import SearchBar from "../../components/SearchBar/SearchBar"
+
 /*import funnel from './Barre/funnel.png'*/
 
 import Skyfall from './DossierAffiches/Skyfall.jpg'
@@ -19,8 +19,6 @@ import Harry_Potter from './DossierAffiches/Harry_Potter.jpg'
 function Home() {
   return (
     <Fragment>
-      <SearchBar />
-
       <Carousel>
         <img className='carousel-img' alt='Poster Skyfall' src={Skyfall} />
         <img className='carousel-img' alt='Poster Intouchables' src={Intouchables} />

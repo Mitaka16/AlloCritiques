@@ -1,0 +1,30 @@
+.result-card{
+    background-color: rgba(255, 255, 255, 0.774);
+    display: flex;
+    padding: 5px;
+    border-bottom: 2px dashed black;
+}
+.info{
+    width: 200px;
+    padding-left: 5px;
+}
+.title{
+    font-size: 3.2em;
+}
+.release-date{
+    font-size: 2.5em;
+}
+.controls{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    margin-bottom: 10px;
+    background-color:#BDD0F5;
+    cursor: pointer;
+    height: 29px;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color:#aabee9;
+}

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "../LikeDislikeButtons_Folder/LikeDisLikeButtons.css";
-import icon_thumbUp from "../../Images/Icons/icon_thumbUp.svg";
-import icon_thumbUpBlue from "../../Images/Icons/icon_thumbUpBlue.svg";
-import icon_thumbDown from "../../Images/Icons/icon_thumbDown.svg";
-import icon_thumbDownBlue from "../../Images/Icons/icon_thumbDownBlue.svg";
+import icon_thumbUp from "../../Assets/Icons/icon_thumbUp.svg";
+import icon_thumbUpBlue from "../../Assets/Icons/icon_thumbUpBlue.svg";
+import icon_thumbDown from "../../Assets/Icons/icon_thumbDown.svg";
+import icon_thumbDownBlue from "../../Assets/Icons/icon_thumbDownBlue.svg";
 
 
 class LikeDislikeButtons extends Component {

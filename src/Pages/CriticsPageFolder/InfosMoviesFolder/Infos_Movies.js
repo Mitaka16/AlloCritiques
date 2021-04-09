@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Infos_Movies.css";
-import Favorite_On from "../../../Images/Logos/Favorite_Coeur_On.svg";
-import Favorite_Off from "../../../Images/Logos/Favorite_Coeur_Off.svg";
+import Favorite_On from "../../../Assets/Logos/Favorite_Coeur_On.svg";
+import Favorite_Off from "../../../Assets/Logos/Favorite_Coeur_Off.svg";
 import MovieList from "../../../components/MovieList";
 import { DATAS, MOVIES } from "../../../constantes/MOCKDATA";
 
