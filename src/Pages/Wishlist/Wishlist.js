@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from '../../context/GlobalState';
-import MovieCard from '../../components/MovieCard';
+import MovieCard from '../../components/MovieCard/MovieCard';
+import "./wishlist.css"
 
 const Watchlist = () => {
     const { watchlist } = useContext(GlobalContext);
@@ -8,7 +9,7 @@ const Watchlist = () => {
         <div className='movie-page'>
             <div className="container">
                 <div className="header">
-                    <h1 className="heading">Watchlist</h1>
+                    <h1 className="heading">MA LISTE</h1>
                     <span className="count-pill">
                         {watchlist.length}{watchlist.length === 1 ? ' Film' : " Films"}
                     </span>

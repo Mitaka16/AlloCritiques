@@ -1,6 +1,6 @@
 import React, { Fragment, useContext } from 'react';
 import { GlobalContext } from "../../context/GlobalState";
-import icon_eye from "../../Assets/Icons/icon_eye.svg";
+
 import "./movieControls.css"
 
 const MovieControls = ({ movie, type }) => {
@@ -9,18 +9,26 @@ const MovieControls = ({ movie, type }) => {
         <div className="inner-card-controls">
             {type === 'watchlist' && (
                 <Fragment>
-                    <button
-                        className="ctrl-btn"
-                        onClick={() => addMovieToWatched(movie)}
-                    >
-                        <i className="fa-fw far fa-eye" />
-                    </button>
+                    <div className="tooltip_bottom">
+                        <button
+                            className="ctrl-btn"
+                            onClick={() => addMovieToWatched(movie)}
+                        >
+                            <div className="tooptip">
+                                <i className="fa-fw fa fa-eye" />
+                                <span className="tooltiptext">Je l'ai vu !</span>
+                            </div>
+                        </button>
+                    </div>
 
                     <button
                         className="ctrl-btn"
                         onClick={() => removeMovieFromWatchlist(movie.id)}
                     >
-                        <i className="fa-fw fa fa-times" />
+                        <div className="tooptip">
+                            <i className="fa-fw fa fa-times" />
+                            <span className="tooltiptext">Supprimer</span>
+                        </div>
                     </button>
                 </Fragment>
             )}
@@ -31,13 +39,19 @@ const MovieControls = ({ movie, type }) => {
                         className="ctrl-btn"
                         onClick={() => moveToWatchlist(movie)}
                     >
-                        <i>{icon_eye}</i>
+                        <div className="tooptip">
+                            <i class="fa-fw fa fas fa-plus-circle"></i>
+                            <span className="tooltiptext">Ajouter à liste</span>
+                        </div>
                     </button>
 
                     <button className="ctrl-btn"
                         onClick={() => removeFromWatched(movie.id)}
                     >
-                        <i className="fa-fw fa fa-times" />
+                        <div className="tooptip">
+                            <i className="fa-fw fa fa-times" />
+                            <span className="tooltiptext">Supprimer</span>
+                        </div>
                     </button>
                 </Fragment>
             )}

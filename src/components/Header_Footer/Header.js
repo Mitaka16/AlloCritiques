@@ -10,7 +10,7 @@ class Header extends Component {
         super(props)
 
         this.state = {
-            Logged: false
+            Logged: true
         }
     }
 
@@ -24,9 +24,9 @@ class Header extends Component {
             <header>
                 <div >
                     <Link className='Logo_Header' to='/'><img src={Logo} alt='Logo AlloCritiques' />
-                    <h1>{DATAS.ALLO}<span className='critiques_titre'>{DATAS.CRITIQUES}</span></h1></Link>
+                        <h1>{DATAS.ALLO}<span className='critiques_titre'>{DATAS.CRITIQUES}</span></h1></Link>
                 </div>
-                    {Logged ? <SearchBar className='SearchBar_bouton' /> : null}
+                {Logged ? <SearchBar className='SearchBar_bouton' /> : null}
                 <div className='Bouton_Header'>
                     {Logged ? <Link className='nav-bouton' to='/'> {DATAS.ACCUEIL} </Link> : <button className='nav-bouton-disabled' onClick={(this.alertClick)} > {DATAS.ACCUEIL} </button>}
                     {Logged ? <Link className='nav-bouton' to='/Wishlist'> {DATAS.WISHLIST} </Link> : <button className='nav-bouton-disabled' onClick={this.alertClick}> {DATAS.WISHLIST} </button>}

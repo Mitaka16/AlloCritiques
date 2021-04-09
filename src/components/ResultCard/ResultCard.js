@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { useHistory } from "react-router-dom"
-import { GlobalContext } from "../context/GlobalState";
+import { GlobalContext } from "../../context/GlobalState";
 import "./resultCard.css"
 
 export const ResultCard = ({ movie }) => {
