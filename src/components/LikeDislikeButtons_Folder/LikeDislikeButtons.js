@@ -53,12 +53,14 @@ class LikeDislikeButtons extends Component {
                     this.state.likeActive ?
                         (
                             <img
+                                alt=''
                                 src={icon_thumbUpBlue}
                                 onClick={() => this.handleLike()}
                             />
                         ) :
                         (
                             <img
+                                alt=''
                                 src={icon_thumbUp}
                                 onClick={() => this.handleLike()}
                             />
@@ -68,12 +70,14 @@ class LikeDislikeButtons extends Component {
                     this.state.dislikeActive ?
                         (
                             <img
+                                alt=''
                                 src={icon_thumbDownBlue}
                                 onClick={() => this.handleDislike()}
                             />
                         ) :
                         (
                             <img
+                            alt=''
                                 src={icon_thumbDown}
                                 onClick={() => this.handleDislike()}
                             />

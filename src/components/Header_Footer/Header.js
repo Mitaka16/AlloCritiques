@@ -14,25 +14,23 @@ class Header extends Component {
         }
     }
 
+    alertClick = () => {
+        alert('Veuillez vous connectés pour avoir accés aux fonctionnalités du site !')
+    }
+
     render() {
         const { Logged } = this.state
         return (
             <header>
-                <div className='Logo_Header'>
-                    <img src={Logo} alt='Logo AlloCritiques' />
-                    <h1>{DATAS.ALLOCRITIQUES}</h1>
+                <div >
+                    <Link className='Logo_Header' to='/'><img src={Logo} alt='Logo AlloCritiques' />
+                    <h1>{DATAS.ALLO}<span className='critiques_titre'>{DATAS.CRITIQUES}</span></h1></Link>
                 </div>
+                    {Logged ? <SearchBar className='SearchBar_bouton' /> : null}
                 <div className='Bouton_Header'>
-                    <SearchBar />
-                    <Link className='nav-bouton' to='/'>
-                        {DATAS.ACCUEIL}
-                    </Link>
-                    <Link className='nav-bouton' to='/Wishlist'>
-                        {DATAS.WISHLIST}
-                    </Link>
-                    <Link className='nav-bouton' to='/Watched'>
-                        {DATAS.WATCHED}
-                    </Link>
+                    {Logged ? <Link className='nav-bouton' to='/'> {DATAS.ACCUEIL} </Link> : <button className='nav-bouton-disabled' onClick={(this.alertClick)} > {DATAS.ACCUEIL} </button>}
+                    {Logged ? <Link className='nav-bouton' to='/Wishlist'> {DATAS.WISHLIST} </Link> : <button className='nav-bouton-disabled' onClick={this.alertClick}> {DATAS.WISHLIST} </button>}
+                    {Logged ? <Link className='nav-bouton' to='/Watched'> {DATAS.WATCHED} </Link> : <button className='nav-bouton-disabled' onClick={this.alertClick}> {DATAS.WATCHED} </button>}
                     {Logged ? <Link className='nav-bouton-account' to='/MyAccount'>{DATAS.ACCOUNT}</Link> : <Link className='nav-bouton-' to='/SignIn'>{DATAS.LOG_REGISTER}</Link>}
                 </div>
             </header>
