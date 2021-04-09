@@ -9,12 +9,19 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.critiques_titre {
+  color: #EB5757;
+}
 .Logo_Header {
   font-size: 20px;
   display: flex;
   justify-content: baseline;
   align-items: center;
   margin-left: 25px;
+  text-decoration: none;
+}
+.Logo_Header:visited {
+  color: #1e1e1e;
 }
 .Logo_Header img {
   height: 125px;
@@ -38,12 +45,27 @@ header {
   color: white;
   border-radius: 4px;
 }
+.nav-bouton-disabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+  margin-right: 15px;
+  height: 45px;
+  width: 140px;
+  background-color: #8e8e8e;
+  font-size: 18px;
+  color: white;
+  border-radius: 4px;
+}
 .nav-bouton- {
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   margin-right: 15px;
+  padding-left: 8px;
   height: 45px;
   width: 140px;
   background-color: #1e1e1e;
@@ -56,7 +78,7 @@ header {
   content: url(../../Images/Logos/Profile.svg);
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1200px) {
   header {
     background-color: #bdd0f5;
     color: #1e1e1e;
@@ -68,7 +90,7 @@ header {
   }
 
   .Logo_Header {
-    font-size: 20px;
+    font-size: 14px;
     display: flex;
     justify-content: baseline;
     align-items: center;
@@ -76,8 +98,8 @@ header {
   }
 
   .Logo_Header img {
-    height: 125px;
-    padding-right: 15px;
+    height: 75px;
+    padding-right: 5px;
   }
 
   .Bouton_Header {
@@ -94,8 +116,8 @@ header {
     justify-content: center;
     text-decoration: none;
     margin-right: 15px;
-    height: 45px;
-    width: 140px;
+    height: 25px;
+    width: 100px;
     background-color: #1e1e1e;
     font-size: 21px;
     color: white;
@@ -103,7 +125,7 @@ header {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   .Logo_Header {
     font-size: 10px;
     display: flex;
@@ -113,7 +135,7 @@ header {
   }
 
   .Logo_Header img {
-    height: 75px;
+    height: 50px;
     padding-right: 5px;
   }
 
@@ -136,8 +158,49 @@ header {
     height: 25px;
     width: 100px;
     background-color: #1e1e1e;
-    font-size: 14px;
+    font-size: 13px;
     color: white;
     border-radius: 4px;
+  }
+}
+@media (max-width: 500px) {
+  .Logo_Header {
+    font-size: 8px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    margin-left: 5px;
+  }
+
+  .Logo_Header img {
+    height: 30px;
+    padding-right: 5px;
+  }
+
+  .Bouton_Header {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  .nav-bouton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-top: 5px;
+    height: 25px;
+    width: 70px;
+    background-color: #1e1e1e;
+    font-size: 13px;
+    color: white;
+    border-radius: 4px;
+  }
+  .nav-bouton-account {
+    height: 20px;
   }
 }

@@ -28,6 +28,7 @@ const Add = () => {
                 <div className="add-content">
                     <div className="input-wrapper">
                         <input
+                            className="SearchBar_bouton"
                             type="text"
                             placeholder="Recherche"
                             value={query}
