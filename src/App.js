@@ -7,19 +7,26 @@ import Wishlist from "./Pages/Wishlist/Wishlist";
 import SignInSignUp from "./Pages/SignIn-SignUp/SignIn-SignUp";
 import Nbr from "./Pages/HomePage/Carousel";
 import Film from "./Pages/TestFilm";
+import MyAccount from "./Components Account/MyAccount";
+
+
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Header />
+        
         <Switch>
-          <Route exact path='/' component={Nbr} />
+        <MyAccount/>
+         <Route exact path='/' component={Nbr} />
           <Route path='/Wishlist' component={Wishlist} />
           <Route path='/SignIn' component={SignInSignUp} />
           <Route path='/Test' component={Film} />
         </Switch>
+        
       </BrowserRouter>
+    
 
       <Footer />
     </div>
