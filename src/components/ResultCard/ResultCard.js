@@ -17,36 +17,31 @@ export const ResultCard = ({ movie }) => {
 
     return (
         <div className="result-card">
-            <div className="poster-wrapper">
+            <div>
                 {movie.poster_path ? (
-                    <button onClick={redirect}>
-                        <img src={`http://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={`${movie.title} Poster`} />
+                    <button className='bouton-poster' onClick={redirect}>
+                        <img className='search-poster' src={`http://image.tmdb.org/t/p/original${movie.poster_path}`} alt={`${movie.title} Poster`} />
                     </button>
                 ) : (
-                    <div className="filler-poster"></div>
+                    null
                 )}
             </div>
-            <div className="info">
-                <div className="header">
-                    <h3 className="title">{movie.title}</h3>
-                </div>
+                
+                    <h3 className="info-title">{movie.title}</h3>
                 <h4 className="release-date">
                     {movie.release_date ? movie.release_date.substring(0, 4) : "-"}
                 </h4>
-
-                <div className="controls">
+            <div className='btn-search'>
                     <button
-                        className="btn"
+                        className="btn-search__add"
                         onClick={() => addMovieToWatchlist(movie)}
                         disabled={watchlistDisabled}
                     >Ajouter à la liste</button>
                     <button
-                        className="btn"
+                        className="btn-search__add"
                         onClick={() => addMovieToWatched(movie)}
                         disabled={watchedDisabled}
                     >Déjà vu</button>
-                </div>
-
             </div>
         </div>
     );

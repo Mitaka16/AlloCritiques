@@ -8,7 +8,7 @@ const MovieCard = ({ movie, type }) => {
             {movie.poster_path ? (
                 <img src={`http://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={`${movie.title} Poster`} />
             ) : (
-                <div className="filler-poster"></div>
+                null
             )}
 
             <MovieControls type={type} movie={movie} />

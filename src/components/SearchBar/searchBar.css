@@ -1,17 +1,18 @@
 .add-content{
     position: absolute;
-    top: 4.5%;
+    top: 40%;
     display: flex;
     flex-direction: column;
 }
 .results{
     display: flex;
+    z-index: 999;
     flex-direction: column;
-    background-color: blue;
     list-style-type: none;
+    background-color: #9c9c9c;
     margin: 0;
 }
 .input-wrapper input{
     width: 300px;
-
+    
 }

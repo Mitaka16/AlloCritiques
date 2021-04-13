@@ -1,8 +1,8 @@
 export const DATAS = {
     ALLO: 'Allo', CRITIQUES: 'Critiques',
     ACCUEIL: 'Accueil',
-    WISHLIST: 'Film à voir',
-    WATCHED: 'Film Déjà-vu',
+    WISHLIST: 'Mes films à voir',
+    WATCHED: 'Mes films déjà-vu',
     LOG_REGISTER: 'Se connecter / S\'inscrire',
     ACCOUNT: 'Mon Compte',
     VALIDER: 'Valider',
