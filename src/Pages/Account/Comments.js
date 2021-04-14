@@ -7,7 +7,7 @@ const Comments = () =>{
     return(
         <div>
             <a href="/commentaires">
-                <h3>Me diriger vres mes commentaires</h3>
+                <h3 className='h3-account'>Me diriger vers mes commentaires</h3>
             </a>
                <br></br><br></br>
         </div>

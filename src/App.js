@@ -8,7 +8,7 @@ import CriticsPage from './Pages/CriticsPageFolder/criticsPage';
 import Wishlist from "./Pages/Wishlist/Wishlist";
 import Watched from "./Pages/Watched/Watched";
 import { GlobalProvider } from "./context/GlobalState";
-import MyAccount from "./Components Account/MyAccount";
+import MyAccount from "./Pages/Account/MyAccount";
 
 
 function App() {

@@ -7,7 +7,7 @@ const ListsOfFilms = () =>  {
     return(
                 <div>
                     <a href="/http://localhost:3000/Wishlist">
-                <h3>Me diriger vres la Wishlist</h3>
+                <h3 className='h3-account'>Me diriger vers la Wishlist</h3>
                 </a>
                
                     <br></br><br></br>

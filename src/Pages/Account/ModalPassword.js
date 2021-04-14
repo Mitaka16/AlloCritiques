@@ -1,5 +1,5 @@
 import React,{Component}from 'react';
-import '../Components Account/Style.css';
+import './Style.css';
 
 class ModalPassword extends Component{
     
