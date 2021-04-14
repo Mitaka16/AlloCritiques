@@ -8,6 +8,7 @@ import CriticsPage from './Pages/CriticsPageFolder/criticsPage';
 import Wishlist from "./Pages/Wishlist/Wishlist";
 import Watched from "./Pages/Watched/Watched";
 import { GlobalProvider } from "./context/GlobalState";
+import MyAccount from "./Components Account/MyAccount";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path='/Watched' component={Watched} />
             <Route path='/SignIn' component={SignInSignUp} />
             <Route path='/Critics' component={CriticsPage} />
+            <Route path='/Account' component={MyAccount} />
           </Switch>
         </Router>
         <Footer />
