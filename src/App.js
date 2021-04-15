@@ -8,7 +8,8 @@ import CriticsPage from './Pages/CriticsPageFolder/criticsPage';
 import Wishlist from "./Pages/Wishlist/Wishlist";
 import Watched from "./Pages/Watched/Watched";
 import { GlobalProvider } from "./context/GlobalState";
-import NavBar from "./components/NavBar/NavBar";
+import MyAccount from "./Pages/Account/MyAccount";
+import ERREUR404 from './Pages/ERREUR 404/Erreur404'
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
             <Route path='/Watched' component={Watched} />
             <Route path='/SignIn' component={SignInSignUp} />
             <Route path='/Critics' component={CriticsPage} />
+            <Route path='/Account' component={MyAccount} />
+            <Route path='' component={ERREUR404} />
           </Switch>
         </Router>
         <Footer />
