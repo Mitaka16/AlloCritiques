@@ -24,7 +24,7 @@ class Photo extends Component {
        <div className="page">
  
          <div className="container">
-           <h1 className="heading">Ajoutez votre image</h1>
+           <p className="heading">Ajoutez votre image</p>
            <div className="img-holder">
            <img src={profileImg} alt="" id="img" className="img"/>
  
