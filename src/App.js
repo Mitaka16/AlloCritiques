@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from "./components/Header_Footer/Header";
+// import Header from "./components/Header_Footer/Header";
 import Footer from "./components/Header_Footer/Footer";
 import SignInSignUp from "./Pages/SignIn-SignUp/SignIn-SignUp";
 import Home from "./Pages/Accueil/Carousel";
@@ -8,6 +8,7 @@ import CriticsPage from './Pages/CriticsPageFolder/criticsPage';
 import Wishlist from "./Pages/Wishlist/Wishlist";
 import Watched from "./Pages/Watched/Watched";
 import { GlobalProvider } from "./context/GlobalState";
+import NavBar from "./components/NavBar/NavBar";
 
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
     <div className="App">
       <GlobalProvider>
         <Router>
-          <Header />
+          <NavBar />
+          {/* <Header /> */}
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/Wishlist' component={Wishlist} />

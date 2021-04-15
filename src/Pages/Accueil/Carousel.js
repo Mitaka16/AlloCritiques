@@ -59,6 +59,7 @@ class Home extends Component {
   render() {
     return (
       <div className='TestSlides'>
+
         <Carousel
           className='carousel-resp'
           slides={this.state.slides}
@@ -67,6 +68,7 @@ class Home extends Component {
           infinite
           arrows
         />
+
       </div>
     );
   }
